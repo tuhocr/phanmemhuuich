@@ -1,0 +1,61 @@
+---
+title: "Hướng dẫn Quarto Blog"
+author: "Duc Nguyen"
+date: "2025-12-28"
+lightbox: true
+categories: [quarto, bootstrap]
+image: "image.png"
+---
+
+# Cách đổi icon ở trang About
+
+Khi tạo blog bằng Quarto, nếu bạn muốn thay đổi icon ở trang `About.qmd` thì áp dụng cách sau.
+
+Tìm icon ở đây <https://icons.getbootstrap.com/> sau đó thay keyword vào được.
+
+![](p1.png)
+
+# Cách gõ keyboard shortcut
+
+<https://quarto.org/docs/authoring/markdown-basics.html#keyboard-shortcuts>
+
+::: {.grid}
+
+::: {.g-col-6}
+```{shortcodes=false}
+{{< kbd Ctrl+Shift+F >}}
+```
+:::
+
+::: {.g-col-6}
+{{< kbd Ctrl+Shift+F >}}
+:::
+
+:::
+
+# Cách chia 2 cột
+
+<https://quarto.org/docs/output-formats/page-layout.html#css-grid>
+
+# Tài liệu tham khảo 
+
+1. Common Problems with Quarto (and some solutions) <https://qmd4sci.njtierney.com/common-problems.html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+{
+  "hash": "5c94cfa102912309c2d8e1a1d3b856bf",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Hướng dẫn Quarto Blog\"\nauthor: \"Duc Nguyen\"\ndate: \"2025-12-28\"\ncategories: [quarto, bootstrap]\nimage: \"image.png\"\n---\n\n\n# Cách đổi icon ở trang About\n\nKhi tạo blog bằng Quarto, nếu bạn muốn thay đổi icon ở trang `About.qmd` thì áp dụng cách sau.\n\nTìm icon ở đây `https://icons.getbootstrap.com/` sau đó thay keyword vào được.\n\n![](p1.png)\n\n# Cách gõ keyboard shortcut\n\n`https://quarto.org/docs/authoring/markdown-basics.html#keyboard-shortcuts`\n\n\n\n\n\n\n\n\n::: {.grid}\n\n::: {.g-col-6}\n\n::: {.cell}\n\n```{.r .cell-code}\n{{< kbd Ctrl+Shift+F >}}\n```\n:::\n\n:::\n\n::: {.g-col-6}\n\n{{< kbd Ctrl+Shift+F >}}\n\n\n:::\n\n:::\n\n# Tài liệu tham khảo \n\n1. Common Problems with Quarto (and some solutions) `https://qmd4sci.njtierney.com/common-problems.html`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -4,15 +4,19 @@ project:
 
 website:
   title: "Phần mềm hữu ích"
+  favicon: logor.png
   navbar:
+    logo: logor.png    
     right:
       - about.qmd
+      - icon: house-door-fill
+        href: https://www.tuhocr.com/
       - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/tuhocr/phanmemhuuich
 format:
   html:
+    toc: true
+    number-sections: true
     theme: cosmo
     css: styles.css
 

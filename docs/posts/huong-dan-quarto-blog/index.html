@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Duc Nguyen">
+<meta name="dcterms.date" content="2025-12-28">
 
-<title>Phần mềm hữu ích - Duc Nguyen</title>
+<title>Phần mềm hữu ích - Hướng dẫn Quarto Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +25,28 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./logor.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../logor.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/kbd/kbd.js"></script>
+<link href="../../site_libs/quarto-contrib/kbd/kbd.css" rel="stylesheet">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,20 +76,20 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./logor.png" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../logor.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Phần mềm hữu ích</span>
     </a>
   </div>
@@ -92,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">Duc Nguyen</span></a>
   </li>  
   <li class="nav-item compact">
@@ -116,39 +124,88 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#cách-đổi-icon-ở-trang-about" id="toc-cách-đổi-icon-ở-trang-about" class="nav-link active" data-scroll-target="#cách-đổi-icon-ở-trang-about"><span class="header-section-number">1</span> Cách đổi icon ở trang About</a></li>
+  <li><a href="#cách-gõ-keyboard-shortcut" id="toc-cách-gõ-keyboard-shortcut" class="nav-link" data-scroll-target="#cách-gõ-keyboard-shortcut"><span class="header-section-number">2</span> Cách gõ keyboard shortcut</a></li>
+  <li><a href="#cách-chia-2-cột" id="toc-cách-chia-2-cột" class="nav-link" data-scroll-target="#cách-chia-2-cột"><span class="header-section-number">3</span> Cách chia 2 cột</a></li>
+  <li><a href="#tài-liệu-tham-khảo" id="toc-tài-liệu-tham-khảo" class="nav-link" data-scroll-target="#tài-liệu-tham-khảo"><span class="header-section-number">4</span> Tài liệu tham khảo</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-jolla content">
-  <img src="ducnguyen.jpg" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Duc Nguyen</h1>
-</div>
-<div class="quarto-title-meta">
+<h1 class="title">Hướng dẫn Quarto Blog</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">quarto</div>
+    <div class="quarto-category">bootstrap</div>
   </div>
-</header><main class="content" id="quarto-document-content">
-<p>Mến chào bạn, mình biên soạn trang blog này để hướng dẫn các phần mềm hữu ích nằm trong <a href="https://class.tuhocr.com/khoa-hoc/computer-proficiency/">Chuyên đề 6: Kỹ năng máy tính trong thời đại số</a> của chương trình <a href="www.tuhocr.com">Tự Học R</a>. Các bạn quan tâm đăng ký học để truy cập vào kho phần mềm và video hướng dẫn cụ thể trong chuyên đề nhé. Cảm ơn các bạn rất nhiều.</p>
+  </div>
 
 
-</main> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="https://class.tuhocr.com/" class="about-link" rel="" target="">
-    <i class="bi bi-check-circle-fill"></i>
-     <span class="about-link-text">Class</span>
-  </a>
-  <a href="https://www.facebook.com/Huong.Dan.Tu.Hoc.R" class="about-link" rel="" target="">
-    <i class="bi bi-facebook"></i>
-     <span class="about-link-text">Facebook</span>
-  </a>
-  <a href="https://github.com/tuhocr" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Duc Nguyen </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 28, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="cách-đổi-icon-ở-trang-about" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Cách đổi icon ở trang About</h1>
+<p>Khi tạo blog bằng Quarto, nếu bạn muốn thay đổi icon ở trang <code>About.qmd</code> thì áp dụng cách sau.</p>
+<p>Tìm icon ở đây <a href="https://icons.getbootstrap.com/" class="uri">https://icons.getbootstrap.com/</a> sau đó thay keyword vào được.</p>
+<p><a href="p1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="p1.png" class="img-fluid"></a></p>
+</section>
+<section id="cách-gõ-keyboard-shortcut" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Cách gõ keyboard shortcut</h1>
+<p><a href="https://quarto.org/docs/authoring/markdown-basics.html#keyboard-shortcuts" class="uri">https://quarto.org/docs/authoring/markdown-basics.html#keyboard-shortcuts</a></p>
+<div class="grid">
+<div class="g-col-6">
+<pre data-shortcodes="false"><code>{{&lt; kbd Ctrl+Shift+F &gt;}}</code></pre>
+</div>
+<div class="g-col-6">
+<p><kbd aria-hidden="true">Ctrl+Shift+F</kbd><span class="visually-hidden">Ctrl+Shift+F</span></p>
 </div>
 </div>
- <!-- /main -->
+</section>
+<section id="cách-chia-2-cột" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Cách chia 2 cột</h1>
+<p><a href="https://quarto.org/docs/output-formats/page-layout.html#css-grid" class="uri">https://quarto.org/docs/output-formats/page-layout.html#css-grid</a></p>
+</section>
+<section id="tài-liệu-tham-khảo" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Tài liệu tham khảo</h1>
+<ol type="1">
+<li>Common Problems with Quarto (and some solutions) <a href="https://qmd4sci.njtierney.com/common-problems.html" class="uri">https://qmd4sci.njtierney.com/common-problems.html</a></li>
+</ol>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -169,6 +226,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -530,6 +594,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","openEffect":"zoom","loop":false,"descPosition":"bottom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 
