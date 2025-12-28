@@ -41,8 +41,11 @@ Tìm icon ở đây <https://icons.getbootstrap.com/> sau đó thay keyword vào
 
 1. Common Problems with Quarto (and some solutions) <https://qmd4sci.njtierney.com/common-problems.html>
 
+2. <https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/>
 
+3. <https://ucsb-meds.github.io/customizing-quarto-websites>
 
+4. <https://mickael.canouil.fr/posts/2023-05-30-quarto-light-dark/>
 
 
 

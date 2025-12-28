@@ -32,6 +32,6 @@
     "href": "posts/huong-dan-quarto-blog/index.html",
     "title": "Hướng dẫn Quarto Blog",
     "section": "",
-    "text": "1 Cách đổi icon ở trang About\nKhi tạo blog bằng Quarto, nếu bạn muốn thay đổi icon ở trang About.qmd thì áp dụng cách sau.\nTìm icon ở đây https://icons.getbootstrap.com/ sau đó thay keyword vào được.\n\n\n\n2 Cách gõ keyboard shortcut\nhttps://quarto.org/docs/authoring/markdown-basics.html#keyboard-shortcuts\n\n\n{{&lt; kbd Ctrl+Shift+F &gt;}}\n\n\nCtrl+Shift+FCtrl+Shift+F\n\n\n\n\n3 Cách chia 2 cột\nhttps://quarto.org/docs/output-formats/page-layout.html#css-grid\n\n\n4 Tài liệu tham khảo\n\nCommon Problems with Quarto (and some solutions) https://qmd4sci.njtierney.com/common-problems.html"
+    "text": "1 Cách đổi icon ở trang About\nKhi tạo blog bằng Quarto, nếu bạn muốn thay đổi icon ở trang About.qmd thì áp dụng cách sau.\nTìm icon ở đây https://icons.getbootstrap.com/ sau đó thay keyword vào được.\n\n\n\n2 Cách gõ keyboard shortcut\nhttps://quarto.org/docs/authoring/markdown-basics.html#keyboard-shortcuts\n\n\n{{&lt; kbd Ctrl+Shift+F &gt;}}\n\n\nCtrl+Shift+FCtrl+Shift+F\n\n\n\n\n3 Cách chia 2 cột\nhttps://quarto.org/docs/output-formats/page-layout.html#css-grid\n\n\n4 Tài liệu tham khảo\n\nCommon Problems with Quarto (and some solutions) https://qmd4sci.njtierney.com/common-problems.html\nhttps://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/\nhttps://ucsb-meds.github.io/customizing-quarto-websites\nhttps://mickael.canouil.fr/posts/2023-05-30-quarto-light-dark/"
   }
 ]

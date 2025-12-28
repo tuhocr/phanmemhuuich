@@ -17,8 +17,15 @@ format:
   html:
     toc: true
     number-sections: true
-    theme: cosmo
-    css: styles.css
+    theme:
+      light: [comos, light.scss]
+      dark: [solar, dark.scss]
+      # - minty
+      # - dark.scss
+ 
+
+ 
+
 
 
 
