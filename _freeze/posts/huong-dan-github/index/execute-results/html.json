@@ -1,0 +1,15 @@
+{
+  "hash": "99edca1324bc2001aa8c8d5f09b3236f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Hướng dẫn Github\"\nauthor: \"Duc Nguyen\"\ndate: last-modified\nlightbox: true\ncategories: [github]\nimage: \"image.webp\"\n---\n\n\n# File `.gitignore`\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n.quarto\n/.quarto/\n\n# History files\n.Rhistory\n.Rapp.history\n\n# Session Data files\n.RData\n.RDataTmp\n\n# User-specific files\n.Ruserdata\n\n# Example code in package build process\n*-Ex.R\n\n# Output files from R CMD build\n/*.tar.gz\n\n# Output files from R CMD check\n/*.Rcheck/\n\n# RStudio files\n.Rproj.user/\n\n# produced vignettes\nvignettes/*.html\nvignettes/*.pdf\n\n# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3\n.httr-oauth\n\n# knitr and R markdown default cache directories\n*_cache/\n/cache/\n\n# Temporary files created by R markdown\n*.utf8.md\n*.knit.md\n\n# R Environment Variables\n.Renviron\n\n# pkgdown site\ndocs/\n\n# translation temp files\npo/*~\n\n# RStudio Connect folder\nrsconnect/\n```\n:::\n\n\n\n\n# Tham khảo\n\n1. <https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r>\n\n\n\n\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

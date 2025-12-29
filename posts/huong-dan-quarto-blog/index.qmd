@@ -51,7 +51,7 @@ Dùng dòng lệnh `![](https://usefulshortcuts.com/imgs/yahoo-smileys/113.gif)`
 
 <https://usefulshortcuts.com/yahoo-messenger/smileys-emoticons.php>
 
-# Tài liệu tham khảo 
+# Tham khảo 
 
 1. Common Problems with Quarto (and some solutions) <https://qmd4sci.njtierney.com/common-problems.html>
 

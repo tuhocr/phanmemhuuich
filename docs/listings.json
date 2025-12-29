@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/huong-dan-github/index.html",
       "/posts/huong-dan-quarto-blog/index.html",
       "/posts/huong-dan-unlock-medium/index.html"
     ]

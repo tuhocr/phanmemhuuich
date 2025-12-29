@@ -1,0 +1,27 @@
+---
+title: "Hướng dẫn Github"
+author: "Duc Nguyen"
+date: last-modified
+lightbox: true
+categories: [github]
+image: "image.webp"
+---
+
+# File `.gitignore`
+
+Khi tạo thư mục project RStudio trong repo Github sẽ phát sinh nhiều file và folder phụ không cần thiết, ta sẽ cho git ignore các file này.
+
+Syntax highlighter <https://highlight.hohli.com/>
+
+{{< include c1.html >}}
+
+# Tham khảo
+
+1. <https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r>
+
+
+
+
+
+
+

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Phần mềm hữu ích",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nHướng dẫn Quarto Blog\n\n\n\n\n\n\nquarto\n\n\nbootstrap\n\n\n\n\n\n\n\n\n\nDec 30, 2025\n\n\nDuc Nguyen\n\n\n\n\n\n\n\n\n\n\n\n\nHướng dẫn unlock Medium\n\n\n\n\n\n\npaywall\n\n\n\n\n\n\n\n\n\nDec 30, 2025\n\n\nDuc Nguyen\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nHướng dẫn Github\n\n\n\n\n\n\ngithub\n\n\n\n\n\n\n\n\n\nDec 30, 2025\n\n\nDuc Nguyen\n\n\n\n\n\n\n\n\n\n\n\n\nHướng dẫn Quarto Blog\n\n\n\n\n\n\nquarto\n\n\nbootstrap\n\n\n\n\n\n\n\n\n\nDec 30, 2025\n\n\nDuc Nguyen\n\n\n\n\n\n\n\n\n\n\n\n\nHướng dẫn unlock Medium\n\n\n\n\n\n\npaywall\n\n\n\n\n\n\n\n\n\nDec 30, 2025\n\n\nDuc Nguyen\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -32,7 +32,7 @@
     "href": "posts/huong-dan-quarto-blog/index.html",
     "title": "Hướng dẫn Quarto Blog",
     "section": "",
-    "text": "1 Cách đổi icon ở trang About\nKhi tạo blog bằng Quarto, nếu bạn muốn thay đổi icon ở trang About.qmd thì áp dụng cách sau.\nTìm icon ở đây https://icons.getbootstrap.com/ sau đó thay keyword vào được.\n\n\n\n2 Cách gõ keyboard shortcut\nhttps://quarto.org/docs/authoring/markdown-basics.html#keyboard-shortcuts\n\n\n{{&lt; kbd Ctrl+Shift+F &gt;}}\n\n\nCtrl+Shift+FCtrl+Shift+F\n\n\n\n\n3 Cách chia 2 cột\nhttps://quarto.org/docs/output-formats/page-layout.html#css-grid\n\n\n4 Chèn emoticons\nhttps://www.unicode.org/emoji/charts/emoji-list.html\nhttps://pb-old-notes.netlify.app/2021/04/19/using-emojis-in-r-and-rmarkdown/\nCách chèn đơn giản là bạn insert file .gif như bình thường\nDùng dòng lệnh ![](https://usefulshortcuts.com/imgs/yahoo-smileys/113.gif) sẽ ra hình này \nhttps://forums.mobirise.com/plugins/EmojiExtender/emoji/yahoo/preview.html\nhttps://usefulshortcuts.com/yahoo-messenger/smileys-emoticons.php\n\n\n5 Tài liệu tham khảo\n\nCommon Problems with Quarto (and some solutions) https://qmd4sci.njtierney.com/common-problems.html\nhttps://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/\nhttps://ucsb-meds.github.io/customizing-quarto-websites\nhttps://mickael.canouil.fr/posts/2023-05-30-quarto-light-dark/\nBlog này có thể dùng làm template https://pb-old-notes.netlify.app/"
+    "text": "1 Cách đổi icon ở trang About\nKhi tạo blog bằng Quarto, nếu bạn muốn thay đổi icon ở trang About.qmd thì áp dụng cách sau.\nTìm icon ở đây https://icons.getbootstrap.com/ sau đó thay keyword vào được.\n\n\n\n2 Cách gõ keyboard shortcut\nhttps://quarto.org/docs/authoring/markdown-basics.html#keyboard-shortcuts\n\n\n{{&lt; kbd Ctrl+Shift+F &gt;}}\n\n\nCtrl+Shift+FCtrl+Shift+F\n\n\n\n\n3 Cách chia 2 cột\nhttps://quarto.org/docs/output-formats/page-layout.html#css-grid\n\n\n4 Chèn emoticons\nhttps://www.unicode.org/emoji/charts/emoji-list.html\nhttps://pb-old-notes.netlify.app/2021/04/19/using-emojis-in-r-and-rmarkdown/\nCách chèn đơn giản là bạn insert file .gif như bình thường\nDùng dòng lệnh ![](https://usefulshortcuts.com/imgs/yahoo-smileys/113.gif) sẽ ra hình này \nhttps://forums.mobirise.com/plugins/EmojiExtender/emoji/yahoo/preview.html\nhttps://usefulshortcuts.com/yahoo-messenger/smileys-emoticons.php\n\n\n5 Tham khảo\n\nCommon Problems with Quarto (and some solutions) https://qmd4sci.njtierney.com/common-problems.html\nhttps://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/\nhttps://ucsb-meds.github.io/customizing-quarto-websites\nhttps://mickael.canouil.fr/posts/2023-05-30-quarto-light-dark/\nBlog này có thể dùng làm template https://pb-old-notes.netlify.app/"
   },
   {
     "objectID": "posts/huong-dan-unlock-medium/index.html",
@@ -40,5 +40,12 @@
     "title": "Hướng dẫn unlock Medium",
     "section": "",
     "text": "Để vào xem các bài trên Medium, ta cần bật VPN, ví dụ bạn tải app này về https://one.one.one.one/ sau đó bật lên.\n\nKhi đó ta có thể truy cập vào xem bài Medium, ví dụ trang này\nhttps://medium.com/data-science/introduction-to-data-manipulation-in-r-with-dplyr-ae13383af3d7\nTuy nhiên để xem các bài này cần trả phí, nếu bạn muốn xem mà không trả phí thì áp dụng cách sau.\nTừ khóa: remove paywalls Medium\nhttps://freedium.cfd/ [not working anymore] \nNgoài ra link này cũng hỗ trợ unlock nhiều trang khác\nhttps://removepaywalls.com/"
+  },
+  {
+    "objectID": "posts/huong-dan-github/index.html",
+    "href": "posts/huong-dan-github/index.html",
+    "title": "Hướng dẫn Github",
+    "section": "",
+    "text": "1 File .gitignore\nKhi tạo thư mục project RStudio trong repo Github sẽ phát sinh nhiều file và folder phụ không cần thiết, ta sẽ cho git ignore các file này.\nSyntax highlighter https://highlight.hohli.com/\n.quarto\n/.quarto/\n\n# History files\n.Rhistory\n.Rapp.history\n\n# Session Data files\n.RData\n.RDataTmp\n\n# User-specific files\n.Ruserdata\n\n# Example code in package build process\n*-Ex.R\n\n# Output files from R CMD build\n/*.tar.gz\n\n# Output files from R CMD check\n/*.Rcheck/\n\n# RStudio files\n.Rproj.user/\n\n# produced vignettes\nvignettes/*.html\nvignettes/*.pdf\n\n# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3\n.httr-oauth\n\n# knitr and R markdown default cache directories\n*_cache/\n/cache/\n\n# Temporary files created by R markdown\n*.utf8.md\n*.knit.md\n\n# R Environment Variables\n.Renviron\n\n# pkgdown site\ndocs/\n\n# translation temp files\npo/*~\n\n# RStudio Connect folder\nrsconnect/\n\n\n2 Tham khảo\n\nhttps://rfortherestofus.com/2021/02/how-to-use-git-github-with-r"
   }
 ]
