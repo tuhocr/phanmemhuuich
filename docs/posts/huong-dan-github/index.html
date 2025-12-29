@@ -9,7 +9,7 @@
 <meta name="author" content="Duc Nguyen">
 <meta name="dcterms.date" content="2025-12-30">
 
-<title>Phần mềm hữu ích - Hướng dẫn Quarto Blog</title>
+<title>Phần mềm hữu ích - Hướng dẫn Github</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -44,11 +44,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="../../site_libs/quarto-contrib/kbd/kbd.js"></script>
-<link href="../../site_libs/quarto-contrib/kbd/kbd.css" rel="stylesheet">
-<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -131,11 +126,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#cách-đổi-icon-ở-trang-about" id="toc-cách-đổi-icon-ở-trang-about" class="nav-link active" data-scroll-target="#cách-đổi-icon-ở-trang-about"><span class="header-section-number">1</span> Cách đổi icon ở trang About</a></li>
-  <li><a href="#cách-gõ-keyboard-shortcut" id="toc-cách-gõ-keyboard-shortcut" class="nav-link" data-scroll-target="#cách-gõ-keyboard-shortcut"><span class="header-section-number">2</span> Cách gõ keyboard shortcut</a></li>
-  <li><a href="#cách-chia-2-cột" id="toc-cách-chia-2-cột" class="nav-link" data-scroll-target="#cách-chia-2-cột"><span class="header-section-number">3</span> Cách chia 2 cột</a></li>
-  <li><a href="#chèn-emoticons" id="toc-chèn-emoticons" class="nav-link" data-scroll-target="#chèn-emoticons"><span class="header-section-number">4</span> Chèn emoticons</a></li>
-  <li><a href="#tham-khảo" id="toc-tham-khảo" class="nav-link" data-scroll-target="#tham-khảo"><span class="header-section-number">5</span> Tham khảo</a></li>
+  <li><a href="#file-.gitignore" id="toc-file-.gitignore" class="nav-link active" data-scroll-target="#file-.gitignore"><span class="header-section-number">1</span> File <code>.gitignore</code></a></li>
+  <li><a href="#tham-khảo" id="toc-tham-khảo" class="nav-link" data-scroll-target="#tham-khảo"><span class="header-section-number">2</span> Tham khảo</a></li>
   </ul>
 </nav>
     </div>
@@ -144,10 +136,9 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hướng dẫn Quarto Blog</h1>
+<h1 class="title">Hướng dẫn Github</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">quarto</div>
-    <div class="quarto-category">bootstrap</div>
+    <div class="quarto-category">github</div>
   </div>
   </div>
 
@@ -177,45 +168,64 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="cách-đổi-icon-ở-trang-about" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Cách đổi icon ở trang About</h1>
-<p>Khi tạo blog bằng Quarto, nếu bạn muốn thay đổi icon ở trang <code>About.qmd</code> thì áp dụng cách sau.</p>
-<p>Tìm icon ở đây <a href="https://icons.getbootstrap.com/" class="uri">https://icons.getbootstrap.com/</a> sau đó thay keyword vào được.</p>
-<p><a href="p1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="p1.png" class="img-fluid"></a></p>
+<section id="file-.gitignore" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> File <code>.gitignore</code></h1>
+<p>Khi tạo thư mục project RStudio trong repo Github sẽ phát sinh nhiều file và folder phụ không cần thiết, ta sẽ cho git ignore các file này.</p>
+<p>Syntax highlighter <a href="https://highlight.hohli.com/" class="uri">https://highlight.hohli.com/</a></p>
+<pre style="font-family:monospace;color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); font-weight: 400; ">.quarto
+<span style="color: rgb(0, 0, 0); font-weight: 400;">/</span>.quarto<span style="color: rgb(0, 0, 0); font-weight: 400;">/</span>
+
+<span style="color: rgb(0, 128, 0); font-weight: 400;"># History files</span>
+.Rhistory
+.Rapp.history
+
+<span style="color: rgb(0, 128, 0); font-weight: 400;"># Session Data files</span>
+.RData
+.RDataTmp
+
+<span style="color: rgb(0, 128, 0); font-weight: 400;"># User-specific files</span>
+.Ruserdata
+
+<span style="color: rgb(0, 128, 0); font-weight: 400;"># Example code in package build process</span>
+<span style="color: rgb(0, 0, 0); font-weight: 400;">*</span><span style="color: rgb(0, 0, 0); font-weight: 400;">-</span>Ex.R
+
+<span style="color: rgb(0, 128, 0); font-weight: 400;"># Output files from R CMD build</span>
+<span style="color: rgb(0, 0, 0); font-weight: 400;">/</span><span style="color: rgb(0, 0, 0); font-weight: 400;">*</span>.tar.gz
+
+<span style="color: rgb(0, 128, 0); font-weight: 400;"># Output files from R CMD check</span>
+<span style="color: rgb(0, 0, 0); font-weight: 400;">/</span><span style="color: rgb(0, 0, 0); font-weight: 400;">*</span>.Rcheck<span style="color: rgb(0, 0, 0); font-weight: 400;">/</span>
+
+<span style="color: rgb(0, 128, 0); font-weight: 400;"># RStudio files</span>
+.Rproj.user<span style="color: rgb(0, 0, 0); font-weight: 400;">/</span>
+
+<span style="color: rgb(0, 128, 0); font-weight: 400;"># produced vignettes</span>
+vignettes<span style="color: rgb(0, 0, 0); font-weight: 400;">/</span><span style="color: rgb(0, 0, 0); font-weight: 400;">*</span>.html
+vignettes<span style="color: rgb(0, 0, 0); font-weight: 400;">/</span><span style="color: rgb(0, 0, 0); font-weight: 400;">*</span>.pdf
+
+<span style="color: rgb(0, 128, 0); font-weight: 400;"># OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3</span>
+.httr<span style="color: rgb(0, 0, 0); font-weight: 400;">-</span>oauth
+
+<span style="color: rgb(0, 128, 0); font-weight: 400;"># knitr and R markdown default cache directories</span>
+<span style="color: rgb(0, 0, 0); font-weight: 400;">*</span>_cache<span style="color: rgb(0, 0, 0); font-weight: 400;">/</span>
+<span style="color: rgb(0, 0, 0); font-weight: 400;">/</span>cache<span style="color: rgb(0, 0, 0); font-weight: 400;">/</span>
+
+<span style="color: rgb(0, 128, 0); font-weight: 400;"># Temporary files created by R markdown</span>
+<span style="color: rgb(0, 0, 0); font-weight: 400;">*</span>.utf8.md
+<span style="color: rgb(0, 0, 0); font-weight: 400;">*</span>.knit.md
+
+<span style="color: rgb(0, 128, 0); font-weight: 400;"># R Environment Variables</span>
+.Renviron
+
+<span style="color: rgb(0, 128, 0); font-weight: 400;"># translation temp files</span>
+po<span style="color: rgb(0, 0, 0); font-weight: 400;">/</span><span style="color: rgb(0, 0, 0); font-weight: 400;">*</span><span style="color: rgb(0, 0, 0); font-weight: 400;">~</span>
+
+<span style="color: rgb(0, 128, 0); font-weight: 400;"># RStudio Connect folder</span>
+rsconnect<span style="color: rgb(0, 0, 0); font-weight: 400;">/</span></pre>
 </section>
-<section id="cách-gõ-keyboard-shortcut" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Cách gõ keyboard shortcut</h1>
-<p><a href="https://quarto.org/docs/authoring/markdown-basics.html#keyboard-shortcuts" class="uri">https://quarto.org/docs/authoring/markdown-basics.html#keyboard-shortcuts</a></p>
-<div class="grid">
-<div class="g-col-6">
-<pre data-shortcodes="false"><code>{{&lt; kbd Ctrl+Shift+F &gt;}}</code></pre>
-</div>
-<div class="g-col-6">
-<p><kbd aria-hidden="true">Ctrl+Shift+F</kbd><span class="visually-hidden">Ctrl+Shift+F</span></p>
-</div>
-</div>
-</section>
-<section id="cách-chia-2-cột" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Cách chia 2 cột</h1>
-<p><a href="https://quarto.org/docs/output-formats/page-layout.html#css-grid" class="uri">https://quarto.org/docs/output-formats/page-layout.html#css-grid</a></p>
-</section>
-<section id="chèn-emoticons" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Chèn emoticons</h1>
-<p><a href="https://www.unicode.org/emoji/charts/emoji-list.html" class="uri">https://www.unicode.org/emoji/charts/emoji-list.html</a></p>
-<p><a href="https://pb-old-notes.netlify.app/2021/04/19/using-emojis-in-r-and-rmarkdown/" class="uri">https://pb-old-notes.netlify.app/2021/04/19/using-emojis-in-r-and-rmarkdown/</a></p>
-<p>Cách chèn đơn giản là bạn insert file <code>.gif</code> như bình thường</p>
-<p>Dùng dòng lệnh <code>![](https://usefulshortcuts.com/imgs/yahoo-smileys/113.gif)</code> sẽ ra hình này <img src="https://usefulshortcuts.com/imgs/yahoo-smileys/113.gif" class="img-fluid"></p>
-<p><a href="https://forums.mobirise.com/plugins/EmojiExtender/emoji/yahoo/preview.html" class="uri">https://forums.mobirise.com/plugins/EmojiExtender/emoji/yahoo/preview.html</a></p>
-<p><a href="https://usefulshortcuts.com/yahoo-messenger/smileys-emoticons.php" class="uri">https://usefulshortcuts.com/yahoo-messenger/smileys-emoticons.php</a></p>
-</section>
-<section id="tham-khảo" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Tham khảo</h1>
+<section id="tham-khảo" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Tham khảo</h1>
 <ol type="1">
-<li><p>Common Problems with Quarto (and some solutions) <a href="https://qmd4sci.njtierney.com/common-problems.html" class="uri">https://qmd4sci.njtierney.com/common-problems.html</a></p></li>
-<li><p><a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/" class="uri">https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/</a></p></li>
-<li><p><a href="https://ucsb-meds.github.io/customizing-quarto-websites" class="uri">https://ucsb-meds.github.io/customizing-quarto-websites</a></p></li>
-<li><p><a href="https://mickael.canouil.fr/posts/2023-05-30-quarto-light-dark/" class="uri">https://mickael.canouil.fr/posts/2023-05-30-quarto-light-dark/</a></p></li>
-<li><p>Blog này có thể dùng làm template <a href="https://pb-old-notes.netlify.app/" class="uri">https://pb-old-notes.netlify.app/</a></p></li>
+<li><a href="https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r" class="uri">https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r</a></li>
 </ol>
 
 
@@ -754,31 +764,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"loop":false,"selector":".lightbox","descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom"});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
-    }
-  });
-
-};
-          </script>
 
 
 
