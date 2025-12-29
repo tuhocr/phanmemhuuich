@@ -3,24 +3,26 @@ title: "Hướng dẫn unlock Medium"
 author: "Duc Nguyen"
 date: last-modified
 lightbox: true
-categories: [quarto, bootstrap]
+categories: [paywall]
 image: "image.jpg"
 editor_options: 
   chunk_output_type: inline
 ---
 
-`https://freedium.cfd/`
+Để vào xem các bài trên Medium, ta cần bật VPN, ví dụ bạn tải app này về <https://one.one.one.one/> sau đó bật lên.
 
-Remove Paywalls
+![](p1.png)
 
-`https://chromewebstore.google.com/detail/remove-paywalls/ghkdkllgoehcklnpajjjmfoaokabfdfm`
+Khi đó ta có thể truy cập vào xem bài Medium, ví dụ trang này
 
-`https://github.com/ShrekBytes/medium-unlocked`
+<https://medium.com/data-science/introduction-to-data-manipulation-in-r-with-dplyr-ae13383af3d7>
 
-bổ sung thêm một ít ok nha nhaaa okaaa
+Tuy nhiên để xem các bài này cần trả phí, nếu bạn muốn xem mà không trả phí thì áp dụng cách sau.
 
-on33 pppp
+Từ khóa: `remove paywalls Medium`
 
-aaa
-asdasd
-sdfgsdf
+<https://freedium.cfd/> [not working anymore]
+
+Ngoài ra link này cũng hỗ trợ unlock nhiều trang khác
+
+<https://removepaywalls.com/>

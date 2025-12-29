@@ -20,7 +20,8 @@ list.files("posts/",
            pattern = "render.R",
            full.names = T) -> render_lock
 
-render_lock
-
-source(render_lock)
-
+for(j in 1:length(render_lock)){
+  
+  source(render_lock[j])
+  
+}
