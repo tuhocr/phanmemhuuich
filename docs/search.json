@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Phần mềm hữu ích",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nHướng dẫn Quarto Blog\n\n\n\n\n\n\nquarto\n\n\nbootstrap\n\n\n\n\n\n\n\n\n\nDec 28, 2025\n\n\nDuc Nguyen\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nHướng dẫn unlock Medium\n\n\n\n\n\n\nquarto\n\n\nbootstrap\n\n\n\n\n\n\n\n\n\nDec 29, 2025\n\n\nDuc Nguyen\n\n\n\n\n\n\n\n\n\n\n\n\nHướng dẫn Quarto Blog\n\n\n\n\n\n\nquarto\n\n\nbootstrap\n\n\n\n\n\n\n\n\n\nDec 29, 2025\n\n\nDuc Nguyen\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -33,5 +33,12 @@
     "title": "Hướng dẫn Quarto Blog",
     "section": "",
     "text": "1 Cách đổi icon ở trang About\nKhi tạo blog bằng Quarto, nếu bạn muốn thay đổi icon ở trang About.qmd thì áp dụng cách sau.\nTìm icon ở đây https://icons.getbootstrap.com/ sau đó thay keyword vào được.\n\n\n\n2 Cách gõ keyboard shortcut\nhttps://quarto.org/docs/authoring/markdown-basics.html#keyboard-shortcuts\n\n\n{{&lt; kbd Ctrl+Shift+F &gt;}}\n\n\nCtrl+Shift+FCtrl+Shift+F\n\n\n\n\n3 Cách chia 2 cột\nhttps://quarto.org/docs/output-formats/page-layout.html#css-grid\n\n\n4 Tài liệu tham khảo\n\nCommon Problems with Quarto (and some solutions) https://qmd4sci.njtierney.com/common-problems.html\nhttps://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/\nhttps://ucsb-meds.github.io/customizing-quarto-websites\nhttps://mickael.canouil.fr/posts/2023-05-30-quarto-light-dark/"
+  },
+  {
+    "objectID": "posts/huong-dan-unlock-medium/index.html",
+    "href": "posts/huong-dan-unlock-medium/index.html",
+    "title": "Hướng dẫn unlock Medium",
+    "section": "",
+    "text": "https://freedium.cfd/\nRemove Paywalls\nhttps://chromewebstore.google.com/detail/remove-paywalls/ghkdkllgoehcklnpajjjmfoaokabfdfm\nhttps://github.com/ShrekBytes/medium-unlocked\nbổ sung thêm một ít ok nha nhaaa okaaa\non33 pppp\naaa asdasd sdfgsdf"
   }
 ]

@@ -1,7 +1,7 @@
 ---
 title: "Hướng dẫn Quarto Blog"
 author: "Duc Nguyen"
-date: "2025-12-28"
+date: last-modified
 lightbox: true
 categories: [quarto, bootstrap]
 image: "image.png"
