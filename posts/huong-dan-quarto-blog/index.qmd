@@ -37,6 +37,20 @@ Tìm icon ở đây <https://icons.getbootstrap.com/> sau đó thay keyword vào
 
 <https://quarto.org/docs/output-formats/page-layout.html#css-grid>
 
+# Chèn emoticons
+
+<https://www.unicode.org/emoji/charts/emoji-list.html>
+
+<https://pb-old-notes.netlify.app/2021/04/19/using-emojis-in-r-and-rmarkdown/>
+
+Cách chèn đơn giản là bạn insert file `.gif` như bình thường
+
+Dùng dòng lệnh `![](https://usefulshortcuts.com/imgs/yahoo-smileys/113.gif)` sẽ ra hình này ![](https://usefulshortcuts.com/imgs/yahoo-smileys/113.gif)
+
+<https://forums.mobirise.com/plugins/EmojiExtender/emoji/yahoo/preview.html>
+
+<https://usefulshortcuts.com/yahoo-messenger/smileys-emoticons.php>
+
 # Tài liệu tham khảo 
 
 1. Common Problems with Quarto (and some solutions) <https://qmd4sci.njtierney.com/common-problems.html>
@@ -47,7 +61,7 @@ Tìm icon ở đây <https://icons.getbootstrap.com/> sau đó thay keyword vào
 
 4. <https://mickael.canouil.fr/posts/2023-05-30-quarto-light-dark/>
 
-
+5. Blog này có thể dùng làm template <https://pb-old-notes.netlify.app/>
 
 
 

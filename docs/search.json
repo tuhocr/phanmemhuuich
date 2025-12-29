@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Phần mềm hữu ích",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nHướng dẫn unlock Medium\n\n\n\n\n\n\npaywall\n\n\n\n\n\n\n\n\n\nDec 30, 2025\n\n\nDuc Nguyen\n\n\n\n\n\n\n\n\n\n\n\n\nHướng dẫn Quarto Blog\n\n\n\n\n\n\nquarto\n\n\nbootstrap\n\n\n\n\n\n\n\n\n\nDec 29, 2025\n\n\nDuc Nguyen\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nHướng dẫn Quarto Blog\n\n\n\n\n\n\nquarto\n\n\nbootstrap\n\n\n\n\n\n\n\n\n\nDec 30, 2025\n\n\nDuc Nguyen\n\n\n\n\n\n\n\n\n\n\n\n\nHướng dẫn unlock Medium\n\n\n\n\n\n\npaywall\n\n\n\n\n\n\n\n\n\nDec 30, 2025\n\n\nDuc Nguyen\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -32,13 +32,13 @@
     "href": "posts/huong-dan-quarto-blog/index.html",
     "title": "Hướng dẫn Quarto Blog",
     "section": "",
-    "text": "1 Cách đổi icon ở trang About\nKhi tạo blog bằng Quarto, nếu bạn muốn thay đổi icon ở trang About.qmd thì áp dụng cách sau.\nTìm icon ở đây https://icons.getbootstrap.com/ sau đó thay keyword vào được.\n\n\n\n2 Cách gõ keyboard shortcut\nhttps://quarto.org/docs/authoring/markdown-basics.html#keyboard-shortcuts\n\n\n{{&lt; kbd Ctrl+Shift+F &gt;}}\n\n\nCtrl+Shift+FCtrl+Shift+F\n\n\n\n\n3 Cách chia 2 cột\nhttps://quarto.org/docs/output-formats/page-layout.html#css-grid\n\n\n4 Tài liệu tham khảo\n\nCommon Problems with Quarto (and some solutions) https://qmd4sci.njtierney.com/common-problems.html\nhttps://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/\nhttps://ucsb-meds.github.io/customizing-quarto-websites\nhttps://mickael.canouil.fr/posts/2023-05-30-quarto-light-dark/"
+    "text": "1 Cách đổi icon ở trang About\nKhi tạo blog bằng Quarto, nếu bạn muốn thay đổi icon ở trang About.qmd thì áp dụng cách sau.\nTìm icon ở đây https://icons.getbootstrap.com/ sau đó thay keyword vào được.\n\n\n\n2 Cách gõ keyboard shortcut\nhttps://quarto.org/docs/authoring/markdown-basics.html#keyboard-shortcuts\n\n\n{{&lt; kbd Ctrl+Shift+F &gt;}}\n\n\nCtrl+Shift+FCtrl+Shift+F\n\n\n\n\n3 Cách chia 2 cột\nhttps://quarto.org/docs/output-formats/page-layout.html#css-grid\n\n\n4 Chèn emoticons\nhttps://www.unicode.org/emoji/charts/emoji-list.html\nhttps://pb-old-notes.netlify.app/2021/04/19/using-emojis-in-r-and-rmarkdown/\nCách chèn đơn giản là bạn insert file .gif như bình thường\nDùng dòng lệnh ![](https://usefulshortcuts.com/imgs/yahoo-smileys/113.gif) sẽ ra hình này \nhttps://forums.mobirise.com/plugins/EmojiExtender/emoji/yahoo/preview.html\nhttps://usefulshortcuts.com/yahoo-messenger/smileys-emoticons.php\n\n\n5 Tài liệu tham khảo\n\nCommon Problems with Quarto (and some solutions) https://qmd4sci.njtierney.com/common-problems.html\nhttps://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/\nhttps://ucsb-meds.github.io/customizing-quarto-websites\nhttps://mickael.canouil.fr/posts/2023-05-30-quarto-light-dark/\nBlog này có thể dùng làm template https://pb-old-notes.netlify.app/"
   },
   {
     "objectID": "posts/huong-dan-unlock-medium/index.html",
     "href": "posts/huong-dan-unlock-medium/index.html",
     "title": "Hướng dẫn unlock Medium",
     "section": "",
-    "text": "Để vào xem các bài trên Medium, ta cần bật VPN, ví dụ bạn tải app này về https://one.one.one.one/ sau đó bật lên.\n\nKhi đó ta có thể truy cập vào xem bài Medium, ví dụ trang này\nhttps://medium.com/data-science/introduction-to-data-manipulation-in-r-with-dplyr-ae13383af3d7\nTuy nhiên để xem các bài này cần trả phí, nếu bạn muốn xem mà không trả phí thì áp dụng cách sau.\nTừ khóa: remove paywalls Medium\nhttps://freedium.cfd/ [not working anymore]\nNgoài ra link này cũng hỗ trợ unlock nhiều trang khác\nhttps://removepaywalls.com/"
+    "text": "Để vào xem các bài trên Medium, ta cần bật VPN, ví dụ bạn tải app này về https://one.one.one.one/ sau đó bật lên.\n\nKhi đó ta có thể truy cập vào xem bài Medium, ví dụ trang này\nhttps://medium.com/data-science/introduction-to-data-manipulation-in-r-with-dplyr-ae13383af3d7\nTuy nhiên để xem các bài này cần trả phí, nếu bạn muốn xem mà không trả phí thì áp dụng cách sau.\nTừ khóa: remove paywalls Medium\nhttps://freedium.cfd/ [not working anymore] \nNgoài ra link này cũng hỗ trợ unlock nhiều trang khác\nhttps://removepaywalls.com/"
   }
 ]
