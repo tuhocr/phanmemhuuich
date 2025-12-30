@@ -13,7 +13,16 @@ Phần mềm này có nhiều phiên bản, trên Windows thì mình dùng phiê
 
 Các bạn có thể ủng hộ nhà phát triển bằng cách mua phần mềm ở trang <https://www.techsmith.com/> (tuy nhiên họ đã chặn IP từ Việt Nam). 
 
-Các bạn trong học viên Tự Học R tải về ở đây [Link](https://class.tuhocr.com/khoa-hoc/data-visualization-in-r/bai-hoc/phan-mem-snagit-editor/)
+Các bạn học viên Tự Học R tải về trong Chuyên đề 2: Data visualization in R (Section Các phần mềm xử lý ảnh) [**[Link]**](https://class.tuhocr.com/khoa-hoc/data-visualization-in-r/bai-hoc/phan-mem-snagit-editor/){style="color:darkgreen; text-decoration: none;"}
+
+
+**<mark style="background-color: #FFFF00">Các chức năng chính như sau:</mark>**
+
+# Canh chỉnh nhanh kích thước ảnh
+
+![](p2.png)
+
+
 
 
 
