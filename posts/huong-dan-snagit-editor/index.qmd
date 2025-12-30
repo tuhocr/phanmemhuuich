@@ -1,0 +1,21 @@
+---
+title: "Hướng dẫn phần mềm Snagit Editor"
+author: "Duc Nguyen"
+date: last-modified
+lightbox: true
+categories: [graphics]
+image: "image.png"
+---
+
+Phần mềm này có nhiều phiên bản, trên Windows thì mình dùng phiên bản 11.
+
+![](p1.png)
+
+Các bạn có thể ủng hộ nhà phát triển bằng cách mua phần mềm ở trang <https://www.techsmith.com/> (tuy nhiên họ đã chặn IP từ Việt Nam). 
+
+Các bạn trong học viên Tự Học R tải về ở đây [Link](https://class.tuhocr.com/khoa-hoc/data-visualization-in-r/bai-hoc/phan-mem-snagit-editor/)
+
+
+
+
+

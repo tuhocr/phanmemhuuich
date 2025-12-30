@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Phần mềm hữu ích",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nHướng dẫn Github\n\n\n\n\n\n\ngithub\n\n\n\n\n\n\n\n\n\nDec 30, 2025\n\n\nDuc Nguyen\n\n\n\n\n\n\n\n\n\n\n\n\nHướng dẫn Quarto Blog\n\n\n\n\n\n\nquarto\n\n\nbootstrap\n\n\n\n\n\n\n\n\n\nDec 30, 2025\n\n\nDuc Nguyen\n\n\n\n\n\n\n\n\n\n\n\n\nHướng dẫn unlock Medium\n\n\n\n\n\n\npaywall\n\n\n\n\n\n\n\n\n\nDec 30, 2025\n\n\nDuc Nguyen\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nHướng dẫn phần mềm Snagit Editor\n\n\n\n\n\n\ngraphics\n\n\n\n\n\n\n\n\n\nDec 30, 2025\n\n\nDuc Nguyen\n\n\n\n\n\n\n\n\n\n\n\n\nHướng dẫn Github\n\n\n\n\n\n\ngithub\n\n\n\n\n\n\n\n\n\nDec 30, 2025\n\n\nDuc Nguyen\n\n\n\n\n\n\n\n\n\n\n\n\nHướng dẫn Quarto Blog\n\n\n\n\n\n\nquarto\n\n\nbootstrap\n\n\n\n\n\n\n\n\n\nDec 30, 2025\n\n\nDuc Nguyen\n\n\n\n\n\n\n\n\n\n\n\n\nHướng dẫn unlock Medium\n\n\n\n\n\n\npaywall\n\n\n\n\n\n\n\n\n\nDec 30, 2025\n\n\nDuc Nguyen\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -47,5 +47,12 @@
     "title": "Hướng dẫn Github",
     "section": "",
     "text": "1 File .gitignore\nKhi tạo thư mục project RStudio trong repo Github sẽ phát sinh nhiều file và folder phụ không cần thiết, ta sẽ cho git ignore các file này.\nSyntax highlighter https://highlight.hohli.com/\n.quarto\n/.quarto/\n\n# History files\n.Rhistory\n.Rapp.history\n\n# Session Data files\n.RData\n.RDataTmp\n\n# User-specific files\n.Ruserdata\n\n# Example code in package build process\n*-Ex.R\n\n# Output files from R CMD build\n/*.tar.gz\n\n# Output files from R CMD check\n/*.Rcheck/\n\n# RStudio files\n.Rproj.user/\n\n# produced vignettes\nvignettes/*.html\nvignettes/*.pdf\n\n# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3\n.httr-oauth\n\n# knitr and R markdown default cache directories\n*_cache/\n/cache/\n\n# Temporary files created by R markdown\n*.utf8.md\n*.knit.md\n\n# R Environment Variables\n.Renviron\n\n# translation temp files\npo/*~\n\n# RStudio Connect folder\nrsconnect/\n\n\n2 Tham khảo\n\nhttps://rfortherestofus.com/2021/02/how-to-use-git-github-with-r"
+  },
+  {
+    "objectID": "posts/huong-dan-snagit-editor/index.html",
+    "href": "posts/huong-dan-snagit-editor/index.html",
+    "title": "Hướng dẫn phần mềm Snagit Editor",
+    "section": "",
+    "text": "Phần mềm này có nhiều phiên bản, trên Windows thì mình dùng phiên bản 11.\n\nCác bạn có thể ủng hộ nhà phát triển bằng cách mua phần mềm ở trang https://www.techsmith.com/ (tuy nhiên họ đã chặn IP từ Việt Nam).\nCác bạn trong học viên Tự Học R tải về ở đây Link"
   }
 ]
