@@ -21,7 +21,11 @@ Tuy nhiên để xem các bài này cần trả phí, nếu bạn muốn xem mà
 
 Từ khóa: `remove paywalls Medium`
 
-<https://freedium.cfd/> **[not working anymore]** ![](https://forums.mobirise.com/plugins/EmojiExtender/emoji/yahoo/i_dunno.gif)
+<https://freedium.cfd/> **[sometimes not working]** ![](https://forums.mobirise.com/plugins/EmojiExtender/emoji/yahoo/i_dunno.gif)
+
+Trang blog của tác giả `freedium` <https://zhymabekroman.github.io/>
+
+Anh này có gợi ý danh sách các phần mềm hay nên cài đặt <https://zhymabekroman.github.io/posts/must-have-browser-extensions/> trong đó có extension `Tabliss` giúp thay đổi hình nền `New tab` trình duyệt.
 
 Ngoài ra link này cũng hỗ trợ unlock nhiều trang khác
 

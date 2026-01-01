@@ -22,7 +22,10 @@ format:
       dark: [solar, dark.scss]
       # - minty
       # - dark.scss
- 
+    highlight-style: 
+      light: "dracula.theme"
+      dark: "kate.theme"
+
 
  
 

@@ -2,10 +2,11 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/huong-dan-snagit-editor/index.html",
-      "/posts/huong-dan-github/index.html",
+      "/posts/huong-dan-linux-phan-1/index.html",
       "/posts/huong-dan-quarto-blog/index.html",
-      "/posts/huong-dan-unlock-medium/index.html"
+      "/posts/huong-dan-unlock-medium/index.html",
+      "/posts/huong-dan-snagit-editor/index.html",
+      "/posts/huong-dan-github/index.html"
     ]
   }
 ]

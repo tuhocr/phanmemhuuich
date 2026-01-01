@@ -51,6 +51,12 @@ Dùng dòng lệnh `![](https://usefulshortcuts.com/imgs/yahoo-smileys/113.gif)`
 
 <https://usefulshortcuts.com/yahoo-messenger/smileys-emoticons.php>
 
+# Thay đổi màu nền code chunk
+
+<https://jofrhwld.github.io/blog/posts/2025/03/2025-03-11_code-chunk-css/>
+
+<https://github.com/orgs/quarto-dev/discussions/12422>
+
 # Tham khảo 
 
 1. Common Problems with Quarto (and some solutions) <https://qmd4sci.njtierney.com/common-problems.html>

@@ -9,7 +9,7 @@
 <meta name="author" content="Duc Nguyen">
 <meta name="dcterms.date" content="2026-01-01">
 
-<title>Phần mềm hữu ích - Hướng dẫn Quarto Blog</title>
+<title>Phần mềm hữu ích - Hướng dẫn Linux (Phần 1)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -44,8 +78,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="../../site_libs/quarto-contrib/kbd/kbd.js"></script>
-<link href="../../site_libs/quarto-contrib/kbd/kbd.css" rel="stylesheet">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -131,12 +163,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#cách-đổi-icon-ở-trang-about" id="toc-cách-đổi-icon-ở-trang-about" class="nav-link active" data-scroll-target="#cách-đổi-icon-ở-trang-about"><span class="header-section-number">1</span> Cách đổi icon ở trang About</a></li>
-  <li><a href="#cách-gõ-keyboard-shortcut" id="toc-cách-gõ-keyboard-shortcut" class="nav-link" data-scroll-target="#cách-gõ-keyboard-shortcut"><span class="header-section-number">2</span> Cách gõ keyboard shortcut</a></li>
-  <li><a href="#cách-chia-2-cột" id="toc-cách-chia-2-cột" class="nav-link" data-scroll-target="#cách-chia-2-cột"><span class="header-section-number">3</span> Cách chia 2 cột</a></li>
-  <li><a href="#chèn-emoticons" id="toc-chèn-emoticons" class="nav-link" data-scroll-target="#chèn-emoticons"><span class="header-section-number">4</span> Chèn emoticons</a></li>
-  <li><a href="#thay-đổi-màu-nền-code-chunk" id="toc-thay-đổi-màu-nền-code-chunk" class="nav-link" data-scroll-target="#thay-đổi-màu-nền-code-chunk"><span class="header-section-number">5</span> Thay đổi màu nền code chunk</a></li>
-  <li><a href="#tham-khảo" id="toc-tham-khảo" class="nav-link" data-scroll-target="#tham-khảo"><span class="header-section-number">6</span> Tham khảo</a></li>
+  <li><a href="#các-lệnh-kiểm-tra-linux-verion" id="toc-các-lệnh-kiểm-tra-linux-verion" class="nav-link active" data-scroll-target="#các-lệnh-kiểm-tra-linux-verion"><span class="header-section-number">1</span> Các lệnh kiểm tra Linux verion</a></li>
+  <li><a href="#các-lệnh-kiểm-tra-hệ-thống" id="toc-các-lệnh-kiểm-tra-hệ-thống" class="nav-link" data-scroll-target="#các-lệnh-kiểm-tra-hệ-thống"><span class="header-section-number">2</span> Các lệnh kiểm tra hệ thống</a></li>
+  <li><a href="#các-lệnh-update-package" id="toc-các-lệnh-update-package" class="nav-link" data-scroll-target="#các-lệnh-update-package"><span class="header-section-number">3</span> Các lệnh update package</a></li>
   </ul>
 </nav>
     </div>
@@ -145,10 +174,9 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hướng dẫn Quarto Blog</h1>
+<h1 class="title">Hướng dẫn Linux (Phần 1)</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">quarto</div>
-    <div class="quarto-category">bootstrap</div>
+    <div class="quarto-category">linux</div>
   </div>
   </div>
 
@@ -178,51 +206,81 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="cách-đổi-icon-ở-trang-about" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Cách đổi icon ở trang About</h1>
-<p>Khi tạo blog bằng Quarto, nếu bạn muốn thay đổi icon ở trang <code>About.qmd</code> thì áp dụng cách sau.</p>
-<p>Tìm icon ở đây <a href="https://icons.getbootstrap.com/" class="uri">https://icons.getbootstrap.com/</a> sau đó thay keyword vào được.</p>
+<p><span style="color:blue">Các lệnh kiểm tra hệ thống, lệnh cơ bản, tạo thư mục, phân quyền user.</span></p>
+<section id="các-lệnh-kiểm-tra-linux-verion" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Các lệnh kiểm tra Linux verion</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">james@silent:~$</span> hostnamectl</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a> <span class="ex">Static</span> hostname: silent</span>
+<span id="cb2-2"><a href="#cb2-2"></a>       <span class="ex">Icon</span> name: computer-vm</span>
+<span id="cb2-3"><a href="#cb2-3"></a>         <span class="ex">Chassis:</span> vm 🖴</span>
+<span id="cb2-4"><a href="#cb2-4"></a>      <span class="ex">Machine</span> ID:</span>
+<span id="cb2-5"><a href="#cb2-5"></a>         <span class="ex">Boot</span> ID:</span>
+<span id="cb2-6"><a href="#cb2-6"></a>  <span class="ex">Virtualization:</span> oracle</span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="ex">Operating</span> System: Linux Mint 22</span>
+<span id="cb2-8"><a href="#cb2-8"></a>          <span class="ex">Kernel:</span> Linux 6.8.0-60-generic</span>
+<span id="cb2-9"><a href="#cb2-9"></a>    <span class="ex">Architecture:</span> x86-64</span>
+<span id="cb2-10"><a href="#cb2-10"></a> <span class="ex">Hardware</span> Vendor: innotek GmbH</span>
+<span id="cb2-11"><a href="#cb2-11"></a>  <span class="ex">Hardware</span> Model: VirtualBox</span>
+<span id="cb2-12"><a href="#cb2-12"></a><span class="ex">Firmware</span> Version: VirtualBox</span>
+<span id="cb2-13"><a href="#cb2-13"></a>   <span class="ex">Firmware</span> Date: Fri 2006-12-01</span>
+<span id="cb2-14"><a href="#cb2-14"></a>    <span class="ex">Firmware</span> Age: 19y 1month 1d</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">james@silent:~$</span> lsb_release <span class="at">-a</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">No</span> LSB modules are available.</span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="ex">Distributor</span> ID: Linuxmint</span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="ex">Description:</span>    Linux Mint 22</span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="ex">Release:</span>    22</span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="ex">Codename:</span>   wilma</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><a href="https://www.hivelocity.net/kb/check-linux-version/" class="uri">https://www.hivelocity.net/kb/check-linux-version/</a></li>
+</ul>
+</section>
+<section id="các-lệnh-kiểm-tra-hệ-thống" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Các lệnh kiểm tra hệ thống</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># gọi câu lệnh htop, nếu máy chưa cài đặt thì cài package này</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install htop</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">james@silent:~$</span> htop</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Bằng cách này ta có thể sort xem process nào chiếm nhiều RAM hay CPU để có hướng xử lý.</p>
 <p><a href="p1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="p1.png" class="img-fluid"></a></p>
-</section>
-<section id="cách-gõ-keyboard-shortcut" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Cách gõ keyboard shortcut</h1>
-<p><a href="https://quarto.org/docs/authoring/markdown-basics.html#keyboard-shortcuts" class="uri">https://quarto.org/docs/authoring/markdown-basics.html#keyboard-shortcuts</a></p>
-<div class="grid">
-<div class="g-col-6">
-<pre data-shortcodes="false"><code>{{&lt; kbd Ctrl+Shift+F &gt;}}</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">james@silent:~$</span> uptime</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a> <span class="ex">14:32:35</span> up  1:40,  1 user,  load average: 0,00, 0,10, 0,14</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="g-col-6">
-<p><kbd aria-hidden="true">Ctrl+Shift+F</kbd><span class="visually-hidden">Ctrl+Shift+F</span></p>
+<p>Một số câu lệnh khác</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># You can use top or ps commands to check the CPU usage.</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">top</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="va">LC_ALL</span><span class="op">=</span>C <span class="ex">top</span> <span class="at">-b</span> <span class="at">-n</span> 1 <span class="kw">|</span><span class="fu">grep</span> ^%Cpu</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># using ps: This will show you the % cpu usage for each process.</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ps</span> <span class="at">-eo</span> pcpu,pid,user,args <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-r</span> <span class="at">-k1</span> <span class="kw">|</span> <span class="fu">less</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> /proc/stat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
+<p>Khi đang trong terminal, muốn thoát ra, ta gõ <code>q</code> sau đó <code>Enter</code>.</p>
+<ul>
+<li><p><a href="https://123host.vn/tailieu/kb/vps/su-dung-htop-de-kiem-tra-tai-nguyen-thong-linux.html" class="uri">https://123host.vn/tailieu/kb/vps/su-dung-htop-de-kiem-tra-tai-nguyen-thong-linux.html</a></p></li>
+<li><p><a href="https://www.cyberciti.biz/tips/how-do-i-find-out-linux-cpu-utilization.html" class="uri">https://www.cyberciti.biz/tips/how-do-i-find-out-linux-cpu-utilization.html</a></p></li>
+<li><p><a href="http://www.mail-archive.com/linuxkernelnewbies@googlegroups.com/msg01690.html" class="uri">http://www.mail-archive.com/linuxkernelnewbies@googlegroups.com/msg01690.html</a></p></li>
+</ul>
 </section>
-<section id="cách-chia-2-cột" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Cách chia 2 cột</h1>
-<p><a href="https://quarto.org/docs/output-formats/page-layout.html#css-grid" class="uri">https://quarto.org/docs/output-formats/page-layout.html#css-grid</a></p>
-</section>
-<section id="chèn-emoticons" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Chèn emoticons</h1>
-<p><a href="https://www.unicode.org/emoji/charts/emoji-list.html" class="uri">https://www.unicode.org/emoji/charts/emoji-list.html</a></p>
-<p><a href="https://pb-old-notes.netlify.app/2021/04/19/using-emojis-in-r-and-rmarkdown/" class="uri">https://pb-old-notes.netlify.app/2021/04/19/using-emojis-in-r-and-rmarkdown/</a></p>
-<p>Cách chèn đơn giản là bạn insert file <code>.gif</code> như bình thường</p>
-<p>Dùng dòng lệnh <code>![](https://usefulshortcuts.com/imgs/yahoo-smileys/113.gif)</code> sẽ ra hình này <img src="https://usefulshortcuts.com/imgs/yahoo-smileys/113.gif" class="img-fluid"></p>
-<p><a href="https://forums.mobirise.com/plugins/EmojiExtender/emoji/yahoo/preview.html" class="uri">https://forums.mobirise.com/plugins/EmojiExtender/emoji/yahoo/preview.html</a></p>
-<p><a href="https://usefulshortcuts.com/yahoo-messenger/smileys-emoticons.php" class="uri">https://usefulshortcuts.com/yahoo-messenger/smileys-emoticons.php</a></p>
-</section>
-<section id="thay-đổi-màu-nền-code-chunk" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Thay đổi màu nền code chunk</h1>
-<p><a href="https://jofrhwld.github.io/blog/posts/2025/03/2025-03-11_code-chunk-css/" class="uri">https://jofrhwld.github.io/blog/posts/2025/03/2025-03-11_code-chunk-css/</a></p>
-<p><a href="https://github.com/orgs/quarto-dev/discussions/12422" class="uri">https://github.com/orgs/quarto-dev/discussions/12422</a></p>
-</section>
-<section id="tham-khảo" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Tham khảo</h1>
-<ol type="1">
-<li><p>Common Problems with Quarto (and some solutions) <a href="https://qmd4sci.njtierney.com/common-problems.html" class="uri">https://qmd4sci.njtierney.com/common-problems.html</a></p></li>
-<li><p><a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/" class="uri">https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/</a></p></li>
-<li><p><a href="https://ucsb-meds.github.io/customizing-quarto-websites" class="uri">https://ucsb-meds.github.io/customizing-quarto-websites</a></p></li>
-<li><p><a href="https://mickael.canouil.fr/posts/2023-05-30-quarto-light-dark/" class="uri">https://mickael.canouil.fr/posts/2023-05-30-quarto-light-dark/</a></p></li>
-<li><p>Blog này có thể dùng làm template <a href="https://pb-old-notes.netlify.app/" class="uri">https://pb-old-notes.netlify.app/</a></p></li>
-</ol>
+<section id="các-lệnh-update-package" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Các lệnh update package</h1>
+<ul>
+<li><a href="https://linuxize.com/post/how-to-use-apt-command/" class="uri">https://linuxize.com/post/how-to-use-apt-command/</a></li>
+</ul>
 
 
 </section>
@@ -760,7 +818,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","selector":".lightbox","descPosition":"bottom","loop":false});
+<script>var lightboxQuarto = GLightbox({"loop":false,"closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","selector":".lightbox"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

@@ -1,0 +1,15 @@
+{
+  "hash": "0b9f85235392e97d75ecd217a7b40e25",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Hướng dẫn Linux (Phần 1)\"\nauthor: \"Duc Nguyen\"\ndate: last-modified\nlightbox: true\ncategories: [linux]\nimage: \"image.webp\"\nengine: knitr\nformat:\n  html:\n    code-line-numbers: false\n---\n\n\n[Các lệnh kiểm tra hệ thống, lệnh cơ bản, tạo thư mục, phân quyền user.]{style=\"color:blue\"}\n\n# Các lệnh kiểm tra Linux verion\n\n\n::: {.cell}\n\n```{.bash .cell-code}\njames@silent:~$ hostnamectl\n```\n:::\n\n::: {.cell}\n\n```{.bash .cell-code  code-line-numbers=\"true\"}\n Static hostname: silent\n       Icon name: computer-vm\n         Chassis: vm 🖴\n      Machine ID:\n         Boot ID:\n  Virtualization: oracle\nOperating System: Linux Mint 22\n          Kernel: Linux 6.8.0-60-generic\n    Architecture: x86-64\n Hardware Vendor: innotek GmbH\n  Hardware Model: VirtualBox\nFirmware Version: VirtualBox\n   Firmware Date: Fri 2006-12-01\n    Firmware Age: 19y 1month 1d\n```\n:::\n\n::: {.cell}\n\n```{.bash .cell-code}\njames@silent:~$ lsb_release -a\n```\n:::\n\n::: {.cell}\n\n```{.bash .cell-code  code-line-numbers=\"true\"}\nNo LSB modules are available.\nDistributor ID:\tLinuxmint\nDescription:\tLinux Mint 22\nRelease:\t22\nCodename:\twilma\n```\n:::\n\n\n* <https://www.hivelocity.net/kb/check-linux-version/>\n\n# Các lệnh kiểm tra hệ thống\n\n\n::: {.cell}\n\n```{.bash .cell-code}\n# gọi câu lệnh htop, nếu máy chưa cài đặt thì cài package này\nsudo apt install htop\n```\n:::\n\n::: {.cell}\n\n```{.bash .cell-code}\njames@silent:~$ htop\n```\n:::\n\n\nBằng cách này ta có thể sort xem process nào chiếm nhiều RAM hay CPU để có hướng xử lý.\n\n![](p1.png)\n\n\n::: {.cell}\n\n```{.bash .cell-code}\njames@silent:~$ uptime\n 14:32:35 up  1:40,  1 user,  load average: 0,00, 0,10, 0,14\n\n```\n:::\n\n\nMột số câu lệnh khác\n\n\n::: {.cell}\n\n```{.bash .cell-code}\n# You can use top or ps commands to check the CPU usage.\ntop\n\nLC_ALL=C top -b -n 1 |grep ^%Cpu\n\n# using ps: This will show you the % cpu usage for each process.\nps -eo pcpu,pid,user,args | sort -r -k1 | less\n\ncat /proc/stat\n\n```\n:::\n\n\nKhi đang trong terminal, muốn thoát ra, ta gõ `q` sau đó `Enter`.\n\n* <https://123host.vn/tailieu/kb/vps/su-dung-htop-de-kiem-tra-tai-nguyen-thong-linux.html>\n\n* <https://www.cyberciti.biz/tips/how-do-i-find-out-linux-cpu-utilization.html>\n\n* <http://www.mail-archive.com/linuxkernelnewbies@googlegroups.com/msg01690.html>\n\n# Các lệnh update package\n\n* <https://linuxize.com/post/how-to-use-apt-command/>\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
