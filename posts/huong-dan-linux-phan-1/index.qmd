@@ -54,6 +54,27 @@ Codename:	wilma
 
 * <https://www.hivelocity.net/kb/check-linux-version/>
 
+# Khởi động lại Linux
+
+```{bash, eval=F}
+sudo reboot
+```
+
+# Các lệnh kiểm tra directory
+
+```{bash, eval=F}
+# change directory
+cd
+
+# go back one level
+
+cd ..
+
+# working directory hiện tại
+pwd 
+```
+
+
 # Các lệnh kiểm tra hệ thống
 
 ```{bash, eval=F}
@@ -78,7 +99,7 @@ james@silent:~$ uptime
 Một số câu lệnh khác
 
 ```{bash, eval = F}
-# You can use top or ps commands to check the CPU usage.
+# you can use top or ps commands to check the CPU usage.
 top
 
 LC_ALL=C top -b -n 1 |grep ^%Cpu
@@ -102,3 +123,4 @@ Khi đang trong terminal, muốn thoát ra, ta gõ `q` sau đó `Enter`.
 # Các lệnh update package
 
 * <https://linuxize.com/post/how-to-use-apt-command/>
+

@@ -164,8 +164,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#các-lệnh-kiểm-tra-linux-verion" id="toc-các-lệnh-kiểm-tra-linux-verion" class="nav-link active" data-scroll-target="#các-lệnh-kiểm-tra-linux-verion"><span class="header-section-number">1</span> Các lệnh kiểm tra Linux verion</a></li>
-  <li><a href="#các-lệnh-kiểm-tra-hệ-thống" id="toc-các-lệnh-kiểm-tra-hệ-thống" class="nav-link" data-scroll-target="#các-lệnh-kiểm-tra-hệ-thống"><span class="header-section-number">2</span> Các lệnh kiểm tra hệ thống</a></li>
-  <li><a href="#các-lệnh-update-package" id="toc-các-lệnh-update-package" class="nav-link" data-scroll-target="#các-lệnh-update-package"><span class="header-section-number">3</span> Các lệnh update package</a></li>
+  <li><a href="#khởi-động-lại-linux" id="toc-khởi-động-lại-linux" class="nav-link" data-scroll-target="#khởi-động-lại-linux"><span class="header-section-number">2</span> Khởi động lại Linux</a></li>
+  <li><a href="#các-lệnh-kiểm-tra-directory" id="toc-các-lệnh-kiểm-tra-directory" class="nav-link" data-scroll-target="#các-lệnh-kiểm-tra-directory"><span class="header-section-number">3</span> Các lệnh kiểm tra directory</a></li>
+  <li><a href="#các-lệnh-kiểm-tra-hệ-thống" id="toc-các-lệnh-kiểm-tra-hệ-thống" class="nav-link" data-scroll-target="#các-lệnh-kiểm-tra-hệ-thống"><span class="header-section-number">4</span> Các lệnh kiểm tra hệ thống</a></li>
+  <li><a href="#các-lệnh-update-package" id="toc-các-lệnh-update-package" class="nav-link" data-scroll-target="#các-lệnh-update-package"><span class="header-section-number">5</span> Các lệnh update package</a></li>
   </ul>
 </nav>
     </div>
@@ -242,32 +244,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><a href="https://www.hivelocity.net/kb/check-linux-version/" class="uri">https://www.hivelocity.net/kb/check-linux-version/</a></li>
 </ul>
 </section>
-<section id="các-lệnh-kiểm-tra-hệ-thống" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Các lệnh kiểm tra hệ thống</h1>
+<section id="khởi-động-lại-linux" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Khởi động lại Linux</h1>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># gọi câu lệnh htop, nếu máy chưa cài đặt thì cài package này</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install htop</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> reboot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="các-lệnh-kiểm-tra-directory" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Các lệnh kiểm tra directory</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># change directory</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># go back one level</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ..</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co"># working directory hiện tại</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="các-lệnh-kiểm-tra-hệ-thống" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Các lệnh kiểm tra hệ thống</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># gọi câu lệnh htop, nếu máy chưa cài đặt thì cài package này</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install htop</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">james@silent:~$</span> htop</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">james@silent:~$</span> htop</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Bằng cách này ta có thể sort xem process nào chiếm nhiều RAM hay CPU để có hướng xử lý.</p>
 <p><a href="p1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="p1.png" class="img-fluid"></a></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">james@silent:~$</span> uptime</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a> <span class="ex">14:32:35</span> up  1:40,  1 user,  load average: 0,00, 0,10, 0,14</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">james@silent:~$</span> uptime</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a> <span class="ex">14:32:35</span> up  1:40,  1 user,  load average: 0,00, 0,10, 0,14</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Một số câu lệnh khác</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># You can use top or ps commands to check the CPU usage.</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">top</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="va">LC_ALL</span><span class="op">=</span>C <span class="ex">top</span> <span class="at">-b</span> <span class="at">-n</span> 1 <span class="kw">|</span><span class="fu">grep</span> ^%Cpu</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># using ps: This will show you the % cpu usage for each process.</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ps</span> <span class="at">-eo</span> pcpu,pid,user,args <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-r</span> <span class="at">-k1</span> <span class="kw">|</span> <span class="fu">less</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> /proc/stat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># you can use top or ps commands to check the CPU usage.</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="ex">top</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="va">LC_ALL</span><span class="op">=</span>C <span class="ex">top</span> <span class="at">-b</span> <span class="at">-n</span> 1 <span class="kw">|</span><span class="fu">grep</span> ^%Cpu</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="co"># using ps: This will show you the % cpu usage for each process.</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ps</span> <span class="at">-eo</span> pcpu,pid,user,args <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-r</span> <span class="at">-k1</span> <span class="kw">|</span> <span class="fu">less</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> /proc/stat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Khi đang trong terminal, muốn thoát ra, ta gõ <code>q</code> sau đó <code>Enter</code>.</p>
 <ul>
@@ -276,8 +298,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p><a href="http://www.mail-archive.com/linuxkernelnewbies@googlegroups.com/msg01690.html" class="uri">http://www.mail-archive.com/linuxkernelnewbies@googlegroups.com/msg01690.html</a></p></li>
 </ul>
 </section>
-<section id="các-lệnh-update-package" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Các lệnh update package</h1>
+<section id="các-lệnh-update-package" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Các lệnh update package</h1>
 <ul>
 <li><a href="https://linuxize.com/post/how-to-use-apt-command/" class="uri">https://linuxize.com/post/how-to-use-apt-command/</a></li>
 </ul>
@@ -818,7 +840,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"loop":false,"closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","loop":false,"selector":".lightbox"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
