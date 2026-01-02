@@ -4,6 +4,7 @@ author: "Duc Nguyen"
 date: last-modified
 lightbox: true
 categories: [quarto, bootstrap]
+engine: knitr
 image: "image.png"
 ---
 
@@ -14,6 +15,24 @@ Khi tạo blog bằng Quarto, nếu bạn muốn thay đổi icon ở trang `Abo
 Tìm icon ở đây <https://icons.getbootstrap.com/> sau đó thay keyword vào được.
 
 ![](p1.png)
+
+# Cài đặt Extension Font Awesome
+
+<https://github.com/quarto-ext/fontawesome>
+
+Ta gõ ở Terminal
+
+```{bash, eval=F}
+quarto add quarto-ext/fontawesome
+```
+
+Sau đó trong file `.qmd`, ví dụ muốn chèn logo {{< fa brands r-project title="R programming language" >}}  thì ta ghi câu lệnh sau 
+
+```{shortcodes=false} 
+{{< fa brands r-project title="R programming language" >}} 
+```
+
+Để tìm các icon khác, bạn search ở đây <https://fontawesome.com/icons/r-project?f=brands&s=solid>
 
 # Cách gõ keyboard shortcut
 
@@ -56,6 +75,48 @@ Dùng dòng lệnh `![](https://usefulshortcuts.com/imgs/yahoo-smileys/113.gif)`
 <https://jofrhwld.github.io/blog/posts/2025/03/2025-03-11_code-chunk-css/>
 
 <https://github.com/orgs/quarto-dev/discussions/12422>
+
+# Hướng dẫn làm website 
+
+<https://ucsb-meds.github.io/creating-quarto-websites/>
+
+# Cách chia tab
+
+```
+::: {.panel-tabset}
+## **{{< fa brands r-project title="R programming language icon" >}} RStudio**
+
+yes
+
+## **{{< fa plus title="plus symbol" >}} Positron**
+
+ok
+
+## **{{< fa terminal title="terminal symbol, |>" >}} Command line**
+
+happy
+:::
+```
+
+::: {.panel-tabset}
+## **{{< fa brands r-project title="R programming language icon" >}} RStudio**
+
+yes
+
+## **{{< fa plus title="plus symbol" >}} Positron**
+
+ok
+
+## **{{< fa terminal title="terminal symbol, |>" >}} Command line**
+
+happy
+:::
+
+<https://github.com/UCSB-MEDS/creating-quarto-websites/blob/main/index.qmd>
+
+# Cách include file
+
+<https://quarto.org/docs/authoring/includes.html>
 
 # Tham khảo 
 

@@ -1,5 +1,5 @@
 ---
-title: "Hướng dẫn phần mềm Snagit Editor"
+title: "Hướng dẫn Snagit Editor"
 author: "Duc Nguyen"
 date: last-modified
 lightbox: true

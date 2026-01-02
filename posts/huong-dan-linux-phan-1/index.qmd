@@ -72,6 +72,9 @@ cd ..
 
 # working directory hiện tại
 pwd 
+
+# liệt kê file
+ls
 ```
 
 

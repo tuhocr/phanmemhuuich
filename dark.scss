@@ -11,3 +11,19 @@ $code-block-bg: #E0D672;
 
 $font-family-sans-serif: "Poppins", sans-serif;
 $font-size-root: 17px;
+
+
+.blockquote {
+    color: #eeeeee !important; /* !important sẽ ghi đè lên giá trị */
+}
+
+blockquote {
+    border-left: .25rem solid #03FF89 !important;
+      }
+      
+      
+/* callout */
+
+.callout.callout-style-default .callout-body {
+    background-color: #003319;
+      }
