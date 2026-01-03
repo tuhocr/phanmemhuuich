@@ -25,7 +25,7 @@ Từ khóa: `remove paywalls Medium`
 
 Trang blog của tác giả `freedium` <https://zhymabekroman.github.io/>
 
-Anh này có gợi ý danh sách các phần mềm hay nên cài đặt <https://zhymabekroman.github.io/posts/must-have-browser-extensions/> trong đó có extension `Tabliss` giúp thay đổi hình nền `New tab` trình duyệt.
+Anh này có gợi ý danh sách các phần mềm hay nên cài đặt <https://zhymabekroman.github.io/posts/must-have-browser-extensions/> trong đó có extension `Tabliss` giúp thay đổi hình nền `New tab` trình duyệt. Phiên bản fork của `Tabliss` <https://github.com/BookCatKid/TablissNG>
 
 Ngoài ra link này cũng hỗ trợ unlock nhiều trang khác
 
