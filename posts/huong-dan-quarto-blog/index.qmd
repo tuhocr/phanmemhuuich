@@ -58,6 +58,8 @@ Sau đó trong file `.qmd`, ví dụ muốn chèn logo {{< fa brands r-project t
 
 # Chèn emoticons
 
+<https://www.freecodecamp.org/news/all-emojis-emoji-list-for-copy-and-paste/>
+
 <https://www.unicode.org/emoji/charts/emoji-list.html>
 
 <https://pb-old-notes.netlify.app/2021/04/19/using-emojis-in-r-and-rmarkdown/>
