@@ -120,6 +120,10 @@ happy
 
 <https://quarto.org/docs/authoring/includes.html>
 
+# Setup RSS feed
+
+<https://quarto.org/docs/websites/website-blog.html#rss-feed>
+
 # Tham khảo 
 
 1. Common Problems with Quarto (and some solutions) <https://qmd4sci.njtierney.com/common-problems.html>
