@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Duc Nguyen">
-<meta name="dcterms.date" content="2026-01-02">
+<meta name="dcterms.date" content="2026-01-07">
 
 <title>Phần mềm hữu ích - Hướng dẫn Linux (Phần 1)</title>
 <style>
@@ -133,6 +133,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
+    <a class="nav-link" href="https://tuhocr.github.io/tailieuthamkhao/"> 
+<span class="menu-text">Tài liệu tham khảo</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://tuhocr.github.io/vedothi/"> 
+<span class="menu-text">Vẽ đồ thị</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">Duc Nguyen</span></a>
   </li>  
@@ -168,6 +176,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#các-lệnh-kiểm-tra-directory" id="toc-các-lệnh-kiểm-tra-directory" class="nav-link" data-scroll-target="#các-lệnh-kiểm-tra-directory"><span class="header-section-number">3</span> Các lệnh kiểm tra directory</a></li>
   <li><a href="#các-lệnh-kiểm-tra-hệ-thống" id="toc-các-lệnh-kiểm-tra-hệ-thống" class="nav-link" data-scroll-target="#các-lệnh-kiểm-tra-hệ-thống"><span class="header-section-number">4</span> Các lệnh kiểm tra hệ thống</a></li>
   <li><a href="#các-lệnh-update-package" id="toc-các-lệnh-update-package" class="nav-link" data-scroll-target="#các-lệnh-update-package"><span class="header-section-number">5</span> Các lệnh update package</a></li>
+  <li><a href="#các-lệnh-uninstall-package" id="toc-các-lệnh-uninstall-package" class="nav-link" data-scroll-target="#các-lệnh-uninstall-package"><span class="header-section-number">6</span> Các lệnh uninstall package</a></li>
   </ul>
 </nav>
     </div>
@@ -196,7 +205,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 2, 2026</p>
+      <p class="date">January 7, 2026</p>
     </div>
   </div>
   
@@ -306,6 +315,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><a href="https://linuxize.com/post/how-to-use-apt-command/" class="uri">https://linuxize.com/post/how-to-use-apt-command/</a></li>
 </ul>
+</section>
+<section id="các-lệnh-uninstall-package" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Các lệnh uninstall package</h1>
+<p>Đầu tiên để <code>remove</code> một phần mềm nào đó trong Linux (ta gọi là <code>package</code>), thì ta cần xem phần mềm đó có đang chạy hay không. Ví dụ ta đang cài <code>raidrive</code> (phần mềm mount ổ cloud như ổ cứng trên máy tính), chạy dòng lệnh sau</p>
+<p><a href="https://docs.raidrive.com/en/cli/commands/status/" class="uri">https://docs.raidrive.com/en/cli/commands/status/</a></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">raidrivecli</span> status <span class="co"># lệnh này trả về kết quả xem raidrive có đang running không</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Sau đó ta liệt kê các phần mềm đang chạy trên máy, rồi gỡ cài đặt, xem chi tiết ở đây</p>
+<p><a href="https://www.cyberciti.biz/faq/linux-uninstall-package-software-using-the-cli/" class="uri">https://www.cyberciti.biz/faq/linux-uninstall-package-software-using-the-cli/</a></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> list <span class="at">--installed</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="ex">dpkg</span> <span class="at">--list</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="ex">dpkg</span> <span class="at">--list</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="st">'^ii'</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="ex">dpkg</span> <span class="at">--list</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-i</span> <span class="st">'raidrive'</span> <span class="co"># kiểm tra xem có package nào tên là raidrive</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt remove raidrive</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
 </section>
@@ -843,7 +873,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"loop":false,"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","loop":false,"descPosition":"bottom","openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

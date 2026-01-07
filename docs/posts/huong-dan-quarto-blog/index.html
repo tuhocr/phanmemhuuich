@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Duc Nguyen">
-<meta name="dcterms.date" content="2026-01-04">
+<meta name="dcterms.date" content="2026-01-05">
 
 <title>Phần mềm hữu ích - Hướng dẫn Quarto Blog</title>
 <style>
@@ -137,6 +137,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
+    <a class="nav-link" href="https://tuhocr.github.io/tailieuthamkhao/"> 
+<span class="menu-text">Tài liệu tham khảo</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://tuhocr.github.io/vedothi/"> 
+<span class="menu-text">Vẽ đồ thị</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">Duc Nguyen</span></a>
   </li>  
@@ -176,7 +184,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#hướng-dẫn-làm-website" id="toc-hướng-dẫn-làm-website" class="nav-link" data-scroll-target="#hướng-dẫn-làm-website"><span class="header-section-number">7</span> Hướng dẫn làm website</a></li>
   <li><a href="#cách-chia-tab" id="toc-cách-chia-tab" class="nav-link" data-scroll-target="#cách-chia-tab"><span class="header-section-number">8</span> Cách chia tab</a></li>
   <li><a href="#cách-include-file" id="toc-cách-include-file" class="nav-link" data-scroll-target="#cách-include-file"><span class="header-section-number">9</span> Cách include file</a></li>
-  <li><a href="#tham-khảo" id="toc-tham-khảo" class="nav-link" data-scroll-target="#tham-khảo"><span class="header-section-number">10</span> Tham khảo</a></li>
+  <li><a href="#setup-rss-feed" id="toc-setup-rss-feed" class="nav-link" data-scroll-target="#setup-rss-feed"><span class="header-section-number">10</span> Setup RSS feed</a></li>
+  <li><a href="#tham-khảo" id="toc-tham-khảo" class="nav-link" data-scroll-target="#tham-khảo"><span class="header-section-number">11</span> Tham khảo</a></li>
   </ul>
 </nav>
     </div>
@@ -206,7 +215,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 4, 2026</p>
+      <p class="date">January 5, 2026</p>
     </div>
   </div>
   
@@ -305,8 +314,12 @@ happy
 <h1 data-number="9"><span class="header-section-number">9</span> Cách include file</h1>
 <p><a href="https://quarto.org/docs/authoring/includes.html" class="uri">https://quarto.org/docs/authoring/includes.html</a></p>
 </section>
-<section id="tham-khảo" class="level1" data-number="10">
-<h1 data-number="10"><span class="header-section-number">10</span> Tham khảo</h1>
+<section id="setup-rss-feed" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Setup RSS feed</h1>
+<p><a href="https://quarto.org/docs/websites/website-blog.html#rss-feed" class="uri">https://quarto.org/docs/websites/website-blog.html#rss-feed</a></p>
+</section>
+<section id="tham-khảo" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Tham khảo</h1>
 <ol type="1">
 <li><p>Common Problems with Quarto (and some solutions) <a href="https://qmd4sci.njtierney.com/common-problems.html" class="uri">https://qmd4sci.njtierney.com/common-problems.html</a></p></li>
 <li><p><a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/" class="uri">https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/</a></p></li>
@@ -851,7 +864,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom","loop":false});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","closeEffect":"zoom","loop":false,"openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

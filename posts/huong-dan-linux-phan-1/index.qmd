@@ -127,3 +127,47 @@ Khi đang trong terminal, muốn thoát ra, ta gõ `q` sau đó `Enter`.
 
 * <https://linuxize.com/post/how-to-use-apt-command/>
 
+# Các lệnh uninstall package
+
+Đầu tiên để `remove` một phần mềm nào đó trong Linux (ta gọi là `package`), thì ta cần xem phần mềm đó có đang chạy hay không. Ví dụ ta đang cài `raidrive` (phần mềm mount ổ cloud như ổ cứng trên máy tính), chạy dòng lệnh sau
+
+<https://docs.raidrive.com/en/cli/commands/status/>
+
+```{bash, eval = F}
+raidrivecli status # lệnh này trả về kết quả xem raidrive có đang running không
+```
+
+Sau đó ta liệt kê các phần mềm đang chạy trên máy, rồi gỡ cài đặt, xem chi tiết ở đây
+
+<https://www.cyberciti.biz/faq/linux-uninstall-package-software-using-the-cli/>
+
+```{bash, eval = F}
+apt list --installed
+
+dpkg --list
+
+dpkg --list | grep '^ii'
+
+dpkg --list | grep -i 'raidrive' # kiểm tra xem có package nào tên là raidrive
+
+sudo apt remove raidrive
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

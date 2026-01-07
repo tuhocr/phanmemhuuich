@@ -1,6 +1,6 @@
 library(quarto) 
 quarto:::quarto_render("index.qmd")
-
+quarto:::quarto_render("about.qmd")
 # render lại lần lượt các file để đảm bảo mọi thứ working good.
 
 list.files("posts/",

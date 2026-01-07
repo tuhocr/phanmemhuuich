@@ -124,6 +124,10 @@ happy
 
 <https://quarto.org/docs/websites/website-blog.html#rss-feed>
 
+# Custom formatting of components 
+
+<https://www.andreashandel.com/posts/2025-03-05-custom-quarto-divs/index.html>
+
 # Tham khảo 
 
 1. Common Problems with Quarto (and some solutions) <https://qmd4sci.njtierney.com/common-problems.html>

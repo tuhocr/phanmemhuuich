@@ -8,7 +8,11 @@ website:
   navbar:
     logo: logor.png    
     right:
-      - about.qmd
+      - text: "Tài liệu tham khảo"
+        href: https://tuhocr.github.io/tailieuthamkhao/
+      - text: "Vẽ đồ thị"
+        href: https://tuhocr.github.io/vedothi/
+      - about.qmd  
       - icon: house-door-fill
         href: https://www.tuhocr.com/
       - icon: github
