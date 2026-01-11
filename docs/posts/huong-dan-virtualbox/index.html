@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Duc Nguyen">
-<meta name="dcterms.date" content="2026-01-03">
+<meta name="dcterms.date" content="2026-01-10">
+<meta name="description" content="Sử dụng VirtualBox để chạy các hệ điều hành khác nhau">
 
-<title>Phần mềm hữu ích - Hướng dẫn Snagit Editor</title>
+<title>Phần mềm hữu ích - Hướng dẫn VirtualBox</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -44,9 +45,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -137,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#canh-chỉnh-nhanh-kích-thước-ảnh" id="toc-canh-chỉnh-nhanh-kích-thước-ảnh" class="nav-link active" data-scroll-target="#canh-chỉnh-nhanh-kích-thước-ảnh"><span class="header-section-number">1</span> Canh chỉnh nhanh kích thước ảnh</a></li>
+  <li><a href="#virtualbox" id="toc-virtualbox" class="nav-link active" data-scroll-target="#virtualbox"><span class="header-section-number">1</span> VirtualBox</a></li>
   </ul>
 </nav>
     </div>
@@ -146,12 +144,17 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hướng dẫn Snagit Editor</h1>
+<h1 class="title">Hướng dẫn VirtualBox</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">graphics</div>
+    <div class="quarto-category">github</div>
   </div>
   </div>
 
+<div>
+  <div class="description">
+    Sử dụng VirtualBox để chạy các hệ điều hành khác nhau
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -166,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 3, 2026</p>
+      <p class="date">January 10, 2026</p>
     </div>
   </div>
   
@@ -178,14 +181,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Phần mềm này có nhiều phiên bản, trên Windows thì mình dùng phiên bản 11.</p>
-<p><a href="p1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="p1.png" class="img-fluid"></a></p>
-<p>Các bạn có thể ủng hộ nhà phát triển bằng cách mua phần mềm ở trang <a href="https://www.techsmith.com/" class="uri">https://www.techsmith.com/</a> (tuy nhiên họ đã chặn IP từ Việt Nam).</p>
-<p>Các bạn học viên Tự Học R tải về trong Chuyên đề 2: Data visualization in R (Section Các phần mềm xử lý ảnh) <a href="https://class.tuhocr.com/khoa-hoc/data-visualization-in-r/bai-hoc/phan-mem-snagit-editor/" style="color:darkgreen; text-decoration: none;"><strong>[Link]</strong></a></p>
-<p><strong><mark style="background-color: #FFFF00">Các chức năng chính như sau:</mark></strong></p>
-<section id="canh-chỉnh-nhanh-kích-thước-ảnh" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Canh chỉnh nhanh kích thước ảnh</h1>
-<p><a href="p2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="p2.png" class="img-fluid"></a></p>
+<section id="virtualbox" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> VirtualBox</h1>
 
 
 </section>
@@ -723,31 +720,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","loop":false,"descPosition":"bottom","openEffect":"zoom"});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
-    }
-  });
-
-};
-          </script>
 
 
 

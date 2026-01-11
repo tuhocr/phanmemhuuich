@@ -1,0 +1,17 @@
+---
+title: "Hướng dẫn VirtualBox"
+author: "Duc Nguyen"
+date: last-modified
+lightbox: true
+description: "Sử dụng VirtualBox để chạy các hệ điều hành khác nhau"
+categories: [github]
+image: "image.png"
+---
+
+# VirtualBox
+
+
+
+<https://quantrimang.com/cong-nghe/cai-dat-guest-additions-trong-virtualbox-165261>
+
+
