@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Duc Nguyen">
-<meta name="dcterms.date" content="2026-01-07">
+<meta name="dcterms.date" content="2026-01-10">
+<meta name="description" content="Sử dụng VirtualBox để chạy các hệ điều hành khác nhau">
 
-<title>Phần mềm hữu ích - Hướng dẫn Linux (Phần 1)</title>
+<title>Phần mềm hữu ích - Hướng dẫn VirtualBox</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -78,9 +45,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -171,12 +135,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#các-lệnh-kiểm-tra-linux-verion" id="toc-các-lệnh-kiểm-tra-linux-verion" class="nav-link active" data-scroll-target="#các-lệnh-kiểm-tra-linux-verion"><span class="header-section-number">1</span> Các lệnh kiểm tra Linux verion</a></li>
-  <li><a href="#khởi-động-lại-linux" id="toc-khởi-động-lại-linux" class="nav-link" data-scroll-target="#khởi-động-lại-linux"><span class="header-section-number">2</span> Khởi động lại Linux</a></li>
-  <li><a href="#các-lệnh-kiểm-tra-directory" id="toc-các-lệnh-kiểm-tra-directory" class="nav-link" data-scroll-target="#các-lệnh-kiểm-tra-directory"><span class="header-section-number">3</span> Các lệnh kiểm tra directory</a></li>
-  <li><a href="#các-lệnh-kiểm-tra-hệ-thống" id="toc-các-lệnh-kiểm-tra-hệ-thống" class="nav-link" data-scroll-target="#các-lệnh-kiểm-tra-hệ-thống"><span class="header-section-number">4</span> Các lệnh kiểm tra hệ thống</a></li>
-  <li><a href="#các-lệnh-update-package" id="toc-các-lệnh-update-package" class="nav-link" data-scroll-target="#các-lệnh-update-package"><span class="header-section-number">5</span> Các lệnh update package</a></li>
-  <li><a href="#các-lệnh-uninstall-package" id="toc-các-lệnh-uninstall-package" class="nav-link" data-scroll-target="#các-lệnh-uninstall-package"><span class="header-section-number">6</span> Các lệnh uninstall package</a></li>
+  <li><a href="#virtualbox" id="toc-virtualbox" class="nav-link active" data-scroll-target="#virtualbox"><span class="header-section-number">1</span> VirtualBox</a></li>
   </ul>
 </nav>
     </div>
@@ -185,12 +144,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hướng dẫn Linux (Phần 1)</h1>
+<h1 class="title">Hướng dẫn VirtualBox</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">linux</div>
+    <div class="quarto-category">github</div>
   </div>
   </div>
 
+<div>
+  <div class="description">
+    Sử dụng VirtualBox để chạy các hệ điều hành khác nhau
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -205,7 +169,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 7, 2026</p>
+      <p class="date">January 10, 2026</p>
     </div>
   </div>
   
@@ -217,125 +181,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p><span style="color:blue">Các lệnh kiểm tra hệ thống, lệnh cơ bản, tạo thư mục, phân quyền user.</span></p>
-<section id="các-lệnh-kiểm-tra-linux-verion" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Các lệnh kiểm tra Linux verion</h1>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">james@silent:~$</span> hostnamectl</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a> <span class="ex">Static</span> hostname: silent</span>
-<span id="cb2-2"><a href="#cb2-2"></a>       <span class="ex">Icon</span> name: computer-vm</span>
-<span id="cb2-3"><a href="#cb2-3"></a>         <span class="ex">Chassis:</span> vm 🖴</span>
-<span id="cb2-4"><a href="#cb2-4"></a>      <span class="ex">Machine</span> ID:</span>
-<span id="cb2-5"><a href="#cb2-5"></a>         <span class="ex">Boot</span> ID:</span>
-<span id="cb2-6"><a href="#cb2-6"></a>  <span class="ex">Virtualization:</span> oracle</span>
-<span id="cb2-7"><a href="#cb2-7"></a><span class="ex">Operating</span> System: Linux Mint 22</span>
-<span id="cb2-8"><a href="#cb2-8"></a>          <span class="ex">Kernel:</span> Linux 6.8.0-60-generic</span>
-<span id="cb2-9"><a href="#cb2-9"></a>    <span class="ex">Architecture:</span> x86-64</span>
-<span id="cb2-10"><a href="#cb2-10"></a> <span class="ex">Hardware</span> Vendor: innotek GmbH</span>
-<span id="cb2-11"><a href="#cb2-11"></a>  <span class="ex">Hardware</span> Model: VirtualBox</span>
-<span id="cb2-12"><a href="#cb2-12"></a><span class="ex">Firmware</span> Version: VirtualBox</span>
-<span id="cb2-13"><a href="#cb2-13"></a>   <span class="ex">Firmware</span> Date: Fri 2006-12-01</span>
-<span id="cb2-14"><a href="#cb2-14"></a>    <span class="ex">Firmware</span> Age: 19y 1month 1d</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">james@silent:~$</span> lsb_release <span class="at">-a</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">No</span> LSB modules are available.</span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="ex">Distributor</span> ID: Linuxmint</span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="ex">Description:</span>    Linux Mint 22</span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="ex">Release:</span>    22</span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="ex">Codename:</span>   wilma</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ul>
-<li><a href="https://www.hivelocity.net/kb/check-linux-version/" class="uri">https://www.hivelocity.net/kb/check-linux-version/</a></li>
-</ul>
-</section>
-<section id="khởi-động-lại-linux" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Khởi động lại Linux</h1>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> reboot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="các-lệnh-kiểm-tra-directory" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Các lệnh kiểm tra directory</h1>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># change directory</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># go back one level</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ..</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co"># working directory hiện tại</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span> </span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co"># liệt kê file</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="các-lệnh-kiểm-tra-hệ-thống" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Các lệnh kiểm tra hệ thống</h1>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># gọi câu lệnh htop, nếu máy chưa cài đặt thì cài package này</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install htop</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">james@silent:~$</span> htop</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Bằng cách này ta có thể sort xem process nào chiếm nhiều RAM hay CPU để có hướng xử lý.</p>
-<p><a href="p1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="p1.png" class="img-fluid"></a></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">james@silent:~$</span> uptime</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a> <span class="ex">14:32:35</span> up  1:40,  1 user,  load average: 0,00, 0,10, 0,14</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Một số câu lệnh khác</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># you can use top or ps commands to check the CPU usage.</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="ex">top</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="va">LC_ALL</span><span class="op">=</span>C <span class="ex">top</span> <span class="at">-b</span> <span class="at">-n</span> 1 <span class="kw">|</span><span class="fu">grep</span> ^%Cpu</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="co"># using ps: This will show you the % cpu usage for each process.</span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ps</span> <span class="at">-eo</span> pcpu,pid,user,args <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-r</span> <span class="at">-k1</span> <span class="kw">|</span> <span class="fu">less</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> /proc/stat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Khi đang trong terminal, muốn thoát ra, ta gõ <code>q</code> sau đó <code>Enter</code>.</p>
-<ul>
-<li><p><a href="https://123host.vn/tailieu/kb/vps/su-dung-htop-de-kiem-tra-tai-nguyen-thong-linux.html" class="uri">https://123host.vn/tailieu/kb/vps/su-dung-htop-de-kiem-tra-tai-nguyen-thong-linux.html</a></p></li>
-<li><p><a href="https://www.cyberciti.biz/tips/how-do-i-find-out-linux-cpu-utilization.html" class="uri">https://www.cyberciti.biz/tips/how-do-i-find-out-linux-cpu-utilization.html</a></p></li>
-<li><p><a href="http://www.mail-archive.com/linuxkernelnewbies@googlegroups.com/msg01690.html" class="uri">http://www.mail-archive.com/linuxkernelnewbies@googlegroups.com/msg01690.html</a></p></li>
-</ul>
-</section>
-<section id="các-lệnh-update-package" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Các lệnh update package</h1>
-<ul>
-<li><a href="https://linuxize.com/post/how-to-use-apt-command/" class="uri">https://linuxize.com/post/how-to-use-apt-command/</a></li>
-</ul>
-</section>
-<section id="các-lệnh-uninstall-package" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Các lệnh uninstall package</h1>
-<p>Đầu tiên để <code>remove</code> một phần mềm nào đó trong Linux (ta gọi là <code>package</code>), thì ta cần xem phần mềm đó có đang chạy hay không. Ví dụ ta đang cài <code>raidrive</code> (phần mềm mount ổ cloud như ổ cứng trên máy tính), chạy dòng lệnh sau</p>
-<p><a href="https://docs.raidrive.com/en/cli/commands/status/" class="uri">https://docs.raidrive.com/en/cli/commands/status/</a></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">raidrivecli</span> status <span class="co"># lệnh này trả về kết quả xem raidrive có đang running không</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Sau đó ta liệt kê các phần mềm đang chạy trên máy, rồi gỡ cài đặt, xem chi tiết ở đây</p>
-<p><a href="https://www.cyberciti.biz/faq/linux-uninstall-package-software-using-the-cli/" class="uri">https://www.cyberciti.biz/faq/linux-uninstall-package-software-using-the-cli/</a></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> list <span class="at">--installed</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="ex">dpkg</span> <span class="at">--list</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="ex">dpkg</span> <span class="at">--list</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="st">'^ii'</span></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="ex">dpkg</span> <span class="at">--list</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-i</span> <span class="st">'raidrive'</span> <span class="co"># kiểm tra xem có package nào tên là raidrive</span></span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt remove raidrive</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<section id="virtualbox" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> VirtualBox</h1>
+<p><a href="https://quantrimang.com/cong-nghe/cai-dat-guest-additions-trong-virtualbox-165261" class="uri">https://quantrimang.com/cong-nghe/cai-dat-guest-additions-trong-virtualbox-165261</a></p>
 
 
 </section>
@@ -873,31 +721,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","loop":false,"selector":".lightbox","descPosition":"bottom"});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
-    }
-  });
-
-};
-          </script>
 
 
 
