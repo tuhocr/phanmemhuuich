@@ -154,16 +154,13 @@ sudo apt remove raidrive
 ```
 
 
+# Nguồn học Linux
 
-# Khóa học linux
+<https://www.server-world.info/en/>
 
+<https://academy.hackthebox.com/course/preview/linux-fundamentals>
 
-https://academy.hackthebox.com/course/preview/linux-fundamentals
-
-https://labex.io/linuxjourney
-
-tạo máy ảo trên vnmare
-https://vinahost.vn/tao-may-ao-tren-win-10/
+<https://labex.io/linuxjourney>
 
 
 

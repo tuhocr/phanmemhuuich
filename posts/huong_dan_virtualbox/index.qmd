@@ -10,8 +10,31 @@ image: "image.png"
 
 # VirtualBox
 
-
-
 <https://quantrimang.com/cong-nghe/cai-dat-guest-additions-trong-virtualbox-165261>
 
+<https://vinahost.vn/tao-may-ao-tren-win-10/>
 
+
+# Máy ảo trên trình duyệt
+
+<https://github.com/nadchif/in-browser-virtual-machine>
+
+<https://nadchif.github.io/in-browser-virtual-machine/>
+
+<https://medium.com/@plegg/quick-setup-of-a-virtual-machine-in-a-web-browser-using-kasm-and-docker-01f3445146d1>
+
+<https://www.apponfly.com/>
+
+<https://www.browserling.com/>
+
+<https://webvm.io/>
+
+# Hệ điều hành
+
+<https://ntdotdev.wordpress.com/2024/01/08/the-complete-tiny10-and-tiny11-list/>
+
+<https://crustywindo.ws/Tiny7>
+
+Kho ISO <https://crustywindo.ws/collection/>
+
+<https://archive.org/search?query=creator%3A%22eXPerience%22>

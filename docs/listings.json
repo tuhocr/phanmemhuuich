@@ -2,9 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/huong_dan_linux_phan_1/index.html",
-      "/posts/huong_dan_virtualbox/index.html",
       "/posts/huong_dan_quarto_blog/index.html",
+      "/posts/huong_dan_virtualbox/index.html",
+      "/posts/huong_dan_linux_phan_1/index.html",
       "/posts/huong_dan_unlock_medium/index.html",
       "/posts/person_and_their_courses/index.html",
       "/posts/huong_dan_snagit_editor/index.html",

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Duc Nguyen">
-<meta name="dcterms.date" content="2026-01-08">
+<meta name="dcterms.date" content="2026-01-17">
 
 <title>Phần mềm hữu ích - Hướng dẫn Quarto Blog</title>
 <style>
@@ -186,7 +186,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#cách-include-file" id="toc-cách-include-file" class="nav-link" data-scroll-target="#cách-include-file"><span class="header-section-number">9</span> Cách include file</a></li>
   <li><a href="#setup-rss-feed" id="toc-setup-rss-feed" class="nav-link" data-scroll-target="#setup-rss-feed"><span class="header-section-number">10</span> Setup RSS feed</a></li>
   <li><a href="#custom-formatting-of-components" id="toc-custom-formatting-of-components" class="nav-link" data-scroll-target="#custom-formatting-of-components"><span class="header-section-number">11</span> Custom formatting of components</a></li>
-  <li><a href="#tham-khảo" id="toc-tham-khảo" class="nav-link" data-scroll-target="#tham-khảo"><span class="header-section-number">12</span> Tham khảo</a></li>
+  <li><a href="#setup-.bat-file-để-render-tự-động" id="toc-setup-.bat-file-để-render-tự-động" class="nav-link" data-scroll-target="#setup-.bat-file-để-render-tự-động"><span class="header-section-number">12</span> Setup <code>.bat</code> file để render tự động</a></li>
+  <li><a href="#tham-khảo" id="toc-tham-khảo" class="nav-link" data-scroll-target="#tham-khảo"><span class="header-section-number">13</span> Tham khảo</a></li>
   </ul>
 </nav>
     </div>
@@ -216,7 +217,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 8, 2026</p>
+      <p class="date">January 17, 2026</p>
     </div>
   </div>
   
@@ -323,8 +324,12 @@ happy
 <h1 data-number="11"><span class="header-section-number">11</span> Custom formatting of components</h1>
 <p><a href="https://www.andreashandel.com/posts/2025-03-05-custom-quarto-divs/index.html" class="uri">https://www.andreashandel.com/posts/2025-03-05-custom-quarto-divs/index.html</a></p>
 </section>
-<section id="tham-khảo" class="level1" data-number="12">
-<h1 data-number="12"><span class="header-section-number">12</span> Tham khảo</h1>
+<section id="setup-.bat-file-để-render-tự-động" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Setup <code>.bat</code> file để render tự động</h1>
+<p><a href="https://www.r-bloggers.com/2023/06/how-to-use-a-windows-bat-file-to-execute-an-r-script/" class="uri">https://www.r-bloggers.com/2023/06/how-to-use-a-windows-bat-file-to-execute-an-r-script/</a></p>
+</section>
+<section id="tham-khảo" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> Tham khảo</h1>
 <ol type="1">
 <li><p>Common Problems with Quarto (and some solutions) <a href="https://qmd4sci.njtierney.com/common-problems.html" class="uri">https://qmd4sci.njtierney.com/common-problems.html</a></p></li>
 <li><p><a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/" class="uri">https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/</a></p></li>
@@ -869,7 +874,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"selector":".lightbox","openEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":false,"descPosition":"bottom","selector":".lightbox","openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
