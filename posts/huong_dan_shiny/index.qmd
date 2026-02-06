@@ -1,0 +1,23 @@
+---
+title: "Hướng dẫn Shiny"
+author: "Duc Nguyen"
+date: last-modified
+lightbox: true
+description: "Các lệnh thường dùng khi thiết kế app Shiny"
+categories: [shiny]
+image: "image.png"
+---
+
+How to remove space between column layouts in tabItem for Shinydashboard
+
+<https://stackoverflow.com/questions/63876993/how-to-remove-space-between-column-layouts-in-tabitem-for-shinydashboard>
+
+https://www.dreamrs.fr/
+
+https://adminlte.io/
+
+https://shiny.posit.co/r/reference/shiny/1.2.0/tabsetpanel.html
+
+https://forum.posit.co/t/how-to-render-checkboxes-in-a-tab-panel-with-render-ui-and-also-add-a-select-all-button-in-shiny-dashboard/17919
+
+https://mastering-shiny.org/action-layout.html

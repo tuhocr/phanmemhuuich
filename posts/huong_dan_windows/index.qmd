@@ -1,0 +1,23 @@
+---
+title: "Hướng dẫn Windows"
+author: "Duc Nguyen"
+date: last-modified
+lightbox: true
+description: "Các kỹ thuật làm việc thuận tiện trong Windows"
+categories: [github]
+image: "image.png"
+---
+
+# Tự động log in không cần đăng nhập
+
+https://www.thegioididong.com/hoi-dap/xoa-mat-khau-tai-khoan-tren-windows-10-685159
+
+https://learn.microsoft.com/en-us/sysinternals/downloads/autologon
+
+# Tắt update 
+
+https://www.thegioididong.com/hoi-dap/cach-tat-update-tren-windows-10-916103
+
+# Đăng ký mail không cần số điện thoại
+
+Dùng outlook
