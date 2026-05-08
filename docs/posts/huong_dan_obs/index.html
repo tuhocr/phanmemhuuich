@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Duc Nguyen">
+<meta name="dcterms.date" content="2026-05-08">
+<meta name="description" content="Phần mềm ghi màn hình">
 
-<title>Phần mềm hữu ích - Duc Nguyen</title>
+<title>Phần mềm hữu ích - Hướng dẫn OBS Studio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,28 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./logor.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../logor.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,17 +79,17 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./logor.png" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../logor.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Phần mềm hữu ích</span>
     </a>
   </div>
@@ -101,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Vẽ đồ thị</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">Duc Nguyen</span></a>
   </li>  
   <li class="nav-item compact">
@@ -126,45 +133,70 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
 <!-- main -->
-<div class="quarto-about-jolla content">
-  <img src="ducnguyen.jpg" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Duc Nguyen</h1>
-</div>
-<div class="quarto-title-meta">
+<h1 class="title">Hướng dẫn OBS Studio</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">screen recording</div>
   </div>
-</header><main class="content" id="quarto-document-content">
-<p>Mến chào bạn, mình là Duc Nguyen, chuyên đào tạo kỹ năng R để xử lý dữ liệu. Mình biên soạn trang blog này để hướng dẫn các phần mềm hữu ích nằm trong <a href="https://class.tuhocr.com/khoa-hoc/computer-proficiency/">Chuyên đề 6: Kỹ năng máy tính trong thời đại số</a> của chương trình <a href="https://class.tuhocr.com/khoa-hoc/">Tự Học R</a>.</p>
-<p><span style="color:blue">Nếu bạn thấy trang này hữu ích, bạn có thể ủng hộ mình bằng cách tặng mình cốc cafe theo thông tin chuyển khoản sau nhé. Cảm ơn các bạn rất nhiều. Together we learn and grow!</span></p>
-<p><span style="color:darkgreen"><strong>Ngân hàng Thương mại Cổ phần Á Châu ACB</strong></span></p>
-<p><span style="color:darkgreen"><strong>193208059</strong></span></p>
-<p><span style="color:darkgreen"><strong>NGUYEN TAN DUC</strong></span></p>
-<p><img src="logo.png" class="img-fluid" style="width:30.0%"></p>
-<script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?cl=ffffff&amp;w=600&amp;t=m&amp;d=fEfi1TeABOpJh2PR30Va7JSXWyub5nA4b3oo2lrqrrE"></script>
+  </div>
+
+<div>
+  <div class="description">
+    Phần mềm ghi màn hình
+  </div>
+</div>
 
 
-</main> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="https://class.tuhocr.com/" class="about-link" rel="" target="">
-    <i class="bi bi-check-circle-fill"></i>
-     <span class="about-link-text">Class</span>
-  </a>
-  <a href="https://www.facebook.com/Huong.Dan.Tu.Hoc.R" class="about-link" rel="" target="">
-    <i class="bi bi-facebook"></i>
-     <span class="about-link-text">Facebook</span>
-  </a>
-  <a href="https://github.com/tuhocr" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-</div>
-</div>
- <!-- /main -->
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Duc Nguyen </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 8, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Cách sử dụng OBS Studio để ghi màn hình.</p>
+<p><a href="image.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="image.jpg" class="img-fluid" style="width:50.0%"></a></p>
+<p>Cách sử dụng trên Windows:</p>
+<p><a href="https://youtu.be/j1HIHYRnOfo?si=pqdoUw0evQ7TnBry" class="uri">https://youtu.be/j1HIHYRnOfo?si=pqdoUw0evQ7TnBry</a></p>
+<p>Cách sử dụng trên MacOS:</p>
+<p><a href="https://www.youtube.com/watch?v=V70gziBFxzM" class="uri">https://www.youtube.com/watch?v=V70gziBFxzM</a></p>
+<p>Lưu ý:</p>
+<ul>
+<li>Set output scale để ghi màn hình full độ phân giải</li>
+</ul>
+<p><a href="p1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="p1.png" class="img-fluid"></a></p>
+<ul>
+<li>Add source sau đó ghi âm màn hình, test thử bằng cách quay lại video youtube xem có ghi được âm thanh không.</li>
+</ul>
+<p><a href="p2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="p2.png" class="img-fluid"></a></p>
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -329,6 +361,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -690,6 +729,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","loop":false,"closeEffect":"zoom","openEffect":"zoom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 

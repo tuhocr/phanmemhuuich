@@ -2,8 +2,10 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/huong_dan_unlock_medium/index.html",
+      "/posts/huong_dan_obs/index.html",
       "/posts/huong_dan_shiny/index.html",
+      "/posts/huong_dan_rstudio/index.html",
+      "/posts/huong_dan_unlock_medium/index.html",
       "/posts/huong_dan_windows/index.html",
       "/posts/huong_dan_quarto_blog/index.html",
       "/posts/huong_dan_virtualbox/index.html",

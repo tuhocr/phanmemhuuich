@@ -1,0 +1,38 @@
+---
+title: "Hướng dẫn OBS Studio"
+author: "Duc Nguyen"
+date: last-modified
+lightbox: true
+categories: [screen recording]
+description: "Phần mềm ghi màn hình"
+image: "image.jpg"
+---
+
+Cách sử dụng OBS Studio để ghi màn hình.
+
+![](image.jpg){width=50%}
+
+Cách sử dụng trên Windows:
+
+<https://youtu.be/j1HIHYRnOfo?si=pqdoUw0evQ7TnBry>
+
+Cách sử dụng trên MacOS:
+
+<https://www.youtube.com/watch?v=V70gziBFxzM>
+
+Lưu ý:
+
+* Set output scale để ghi màn hình full độ phân giải
+
+![](p1.png)
+
+* Add source sau đó ghi âm màn hình, test thử bằng cách quay lại video youtube xem có ghi được âm thanh không.
+
+![](p2.png)
+
+
+
+
+
+
+

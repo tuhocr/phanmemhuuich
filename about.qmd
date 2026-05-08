@@ -16,4 +16,20 @@ about:
 
 ---
 
-Mến chào bạn, mình là Duc Nguyen, chuyên đào tạo kỹ năng R để xử lý dữ liệu. Mình biên soạn trang blog này để hướng dẫn các phần mềm hữu ích nằm trong [Chuyên đề 6: Kỹ năng máy tính trong thời đại số](https://class.tuhocr.com/khoa-hoc/computer-proficiency/) của chương trình [Tự Học R](https://class.tuhocr.com/khoa-hoc/). Các bạn quan tâm có thể đăng ký học để truy cập vào kho phần mềm và video hướng dẫn cụ thể trong chuyên đề nhé. Cảm ơn các bạn rất nhiều.
+Mến chào bạn, mình là Duc Nguyen, chuyên đào tạo kỹ năng R để xử lý dữ liệu. Mình biên soạn trang blog này để hướng dẫn các phần mềm hữu ích nằm trong [Chuyên đề 6: Kỹ năng máy tính trong thời đại số](https://class.tuhocr.com/khoa-hoc/computer-proficiency/) của chương trình [Tự Học R](https://class.tuhocr.com/khoa-hoc/).
+
+[Nếu bạn thấy trang này hữu ích, bạn có thể ủng hộ mình bằng cách tặng mình cốc cafe theo thông tin chuyển khoản sau nhé. Cảm ơn các bạn rất nhiều. Together we learn and grow!]{style="color:blue"}
+
+[**Ngân hàng Thương mại Cổ phần Á Châu ACB**]{style="color:darkgreen"}
+
+[**193208059**]{style="color:darkgreen"}
+
+[**NGUYEN TAN DUC**]{style="color:darkgreen"}
+
+
+![](logo.png){width=30%}
+
+
+
+
+<script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=600&t=m&d=fEfi1TeABOpJh2PR30Va7JSXWyub5nA4b3oo2lrqrrE'></script>

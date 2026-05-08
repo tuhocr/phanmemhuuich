@@ -21,3 +21,14 @@ https://shiny.posit.co/r/reference/shiny/1.2.0/tabsetpanel.html
 https://forum.posit.co/t/how-to-render-checkboxes-in-a-tab-panel-with-render-ui-and-also-add-a-select-all-button-in-shiny-dashboard/17919
 
 https://mastering-shiny.org/action-layout.html
+
+https://deanattali.com/blog/advanced-shiny-tips/
+
+# https://shiny.posit.co/r/gallery/
+# https://vnijs.shinyapps.io/radiant/
+# https://shiny.posit.co/r/gallery/life-sciences/hospital-data-antimicrobial/https://shiny.posit.co/r/gallery/life-sciences/hospital-data-antimicrobial/
+
+https://rstudio.github.io/DT/003-tabletools-buttons.html
+
+kho dashboard
+https://public.tableau.com/app/discover

@@ -1,0 +1,32 @@
+---
+title: "Hướng dẫn RStudio"
+author: "Duc Nguyen"
+date: last-modified
+lightbox: true
+description: "Các lệnh thường dùng khi sử dụng RStudio"
+categories: [shiny]
+image: "image.png"
+---
+
+RSTUDIO bị lỗi utf8
+
+https://learn.microsoft.com/vi-vn/windows/apps/design/globalizing/use-utf8-code-page
+
+Windows graphics device interface (GDI) doesn't currently support setting the activeCodePage property per process. Instead, GDI defaults to the active system codepage. To configure your app to render UTF-8 text via GDI, go to Windows Settings > Time & language > Language & region > Administrative language settings > Change system locale, and check Beta: Use Unicode UTF-8 for worldwide language support. Then reboot the PC for the change to take effect.
+
+https://yihui.org/tinytex/
+
+library(tinytex)
+tlmgr_search('/times.sty')   # search for times.sty
+tlmgr_install('psnfss')      # install the psnfss package
+tlmgr_update() 
+
+tinytex::reinstall_tinytex()
+
+terminal
+
+https://quarto.org/docs/output-formats/pdf-engine.html
+
+quarto install tinytex
+
+quarto update tinytex
