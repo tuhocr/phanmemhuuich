@@ -77,6 +77,14 @@ pwd
 ls
 ```
 
+# Các lệnh kiểm tra dung lượng ổ cứng
+
+```{bash, eval=F}
+df -h
+```
+
+![](p2.png)
+
 
 # Các lệnh kiểm tra hệ thống
 

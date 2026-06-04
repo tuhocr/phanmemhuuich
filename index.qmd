@@ -12,12 +12,12 @@ listing:
             title, 
             subtitle,
             description,
-            # filename,
-            # file-modified,
             author,
             reading-time, 
             categories,
             excerpt]
+            # filename,
+            # file-modified,
 page-layout: full
 title-block-banner: false
 
